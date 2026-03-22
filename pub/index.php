@@ -1,15 +1,15 @@
 <?php
-$conn = new mysqli("localhost","root","","movie_hunter");
-$sql = "
-INSERT INTO countries (ru_name,en_name) 
-VALUES ;";
-
-if($conn->connect_error){
-  die("conect failed");
+$page = [
+  "home" => "home.php",
+  "profil" => "profile.php",
+  "" => "home.php",
+];
+foreach($page as $key => $value){
+  if($key == $_GET["route"]){
+    require_once("pages/$value");
+    
+  }
 }
-echo("conect ok");
 
-// $conn->query($sql);
-$conn->close();
 
 ?>

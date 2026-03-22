@@ -1,0 +1,14 @@
+<IfModule mod_re
+write.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#ADMIN
+RewriteRule ^admin/?$ admin/index.php?route=home [L,QSA]
+RewriteRule ^admin/(.*)$ admin/index.php?route=$1 [L,QSA]
+
+#PUB
+RewriteRule ^$ pub/index.php?route=home [L,QSA]
+RewriteRule ^(.*)$ pub/index.php?route=$1 [L,QSA]
+</IfModule>

@@ -282,6 +282,7 @@ h1#logo a {
 	font-weight:bold;
 }
 .rating .stars {
+	position: relative;
 	float:left;
 	width:60px;
 	height:11px;
