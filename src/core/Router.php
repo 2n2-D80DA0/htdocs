@@ -1,0 +1,95 @@
+<?php
+  // Наверное тут есть методы что стоит вынести вне 
+  // потому-что они могут быть использованы только тут.
+  // И возможно надо было юзать Throw Exceptions 
+
+  // юзаю http_response_code(404) при ошибке возможно стоило бы сделать 
+  // ReturnError что-бы каждй раз не писать код ошибки
+
+namespace Core;
+use Assets\Lib;
+class Router
+{
+  public string $error = "error";
+
+  public function __construct(array $str)
+  {
+    $this->className = "Controller\\" . $str["class"];
+    $this->method = $str["method"];
+    unset($str["class"]);
+    unset($str["method"]);
+    $this->quest = $str;
+    unset($str);
+  }
+  private function checkClass(): string|null
+  {
+    if (!class_exists($this->className) || $this->className === __CLASS__){
+      http_response_code(404);
+      return Lib::message($this->error, "invalid class", 1);
+    }
+    $this->class = new $this->className();
+    return null;
+  }
+  private function checkMethod(): string|null
+  {
+    if (!method_exists($this->class, $this->method)){
+      http_response_code(404);
+      return Lib::message($this->error, "invalid method", 1);
+    }
+      
+    return null;
+  }
+  private function checkParams(array $questValues, array $methodValues): string|null
+  {
+
+    $a = $questValues;
+    $b = $methodValues;
+    sort($a);
+    sort($b);
+    // array_diff($questValues,$methodValues);
+    if ($a !== $b){
+      http_response_code(404);
+      return Lib::message(
+        $this->error, 
+        "invalid values, methot can get only", 
+        $this->method ."(" . (preg_replace("/[^a-zA-Z \,]/", "", json_encode($methodValues))) . ")");
+    }
+    return null;
+  }
+  // Получаем массив какие значение можнт принять метод вызываемого класса
+  private function getMethodValues(): array
+  {
+    $method = new \ReflectionMethod($this->class, $this->method);
+    $methodqueru = $method->getParameters();
+    $methodParams = [];
+    foreach ($methodqueru as $param) {
+      $methodParams[] = $param->getName();
+    }
+    return $methodParams;
+  }
+  // Метод упорядочивания последовательности входных значений в массив
+  private function parm(array $methodValues): array
+  {
+    $params = [];
+    foreach ($methodValues as $key) {
+      $params[] = $this->quest[$key];
+    }
+    return $params;
+  }
+  // Выполнить;
+  public function run(): string
+  {
+    if ($error = $this->checkClass())
+      return $error;
+
+    if ($error = $this->checkMethod())
+      return $error;
+
+    $methodValues = $this->getMethodValues();
+
+    if ($error = $this->checkParams(array_keys($this->quest), $methodValues))
+      return $error;
+    // можно так же через инвоук сделать рефлекшен метода
+    return $this->class->{$this->method}(...$this->parm($methodValues));
+  }
+}

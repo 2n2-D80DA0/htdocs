@@ -1,14 +1,14 @@
-<IfModule mod_re
-write.c>
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
 
-#ADMIN
-RewriteRule ^admin/?$ admin/index.php?route=home [L,QSA]
-RewriteRule ^admin/(.*)$ admin/index.php?route=$1 [L,QSA]
+    # api и pub через один фронт-контроллер
+    RewriteRule ^api/(.*)$ pub/index.php?route=api/$1 [L,QSA]
+    RewriteRule ^$ pub/index.php?route=home [L,QSA]
+    RewriteRule ^(.*)$ pub/index.php?route=$1 [L,QSA]
 
-#PUB
-RewriteRule ^$ pub/index.php?route=home [L,QSA]
-RewriteRule ^(.*)$ pub/index.php?route=$1 [L,QSA]
+    # admin отдельно
+    RewriteRule ^admin?$ admin/index.php?route=home [L,QSA]
+    RewriteRule ^admin(.*)$ admin/index.php?route=$1 [L,QSA]
 </IfModule>
