@@ -1,0 +1,149 @@
+<?php
+namespace Services;
+use Assets\Lib;
+
+class Film{
+  private string $filmsDir = __DIR__ . '../../storage/films/';
+  private string $trilersDir = __DIR__ . '../../storage/trailers/';
+  private string $miniatureDir = __DIR__ . '../../storage/miniature/';
+
+  public array $allowed = [
+    'video' => ['mp4','mkv','avi'],
+    'image' => ['jpg','jpeg','png','gif']
+  ];
+
+  // можно сделать кароче и читаемее но не буду \\
+  private static function addFileInStorage(array $file, string $name, string $dir, array $exts) : string|null {
+    if ($file['error'] !== UPLOAD_ERR_OK)
+      return "Upload error";
+    $ext = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
+    if (!in_array($ext, $exts))
+      return "Invalid file extension";
+
+    $path = $dir . "/{$name}/";
+    
+    if (!is_dir($path))
+      if (!mkdir($path, 0777, true))
+        return "Failed to create directory";
+
+    $filename = $name . '.' . $ext;
+    $target = $dir . $filename;
+
+    if (!move_uploaded_file($file['tmp_name'], $target))
+      return "Failed to move file";
+
+    return null;
+  }
+
+  private static function deleteFile(string $path) : string|null {
+    if (!file_exists($path))
+      return "File does not exist";
+
+    if (!unlink($path))
+      return "Failed to delete file";
+
+    if(!rmdir($path."../"))
+      return "Failed to delate path";
+
+    return null;
+  }
+
+
+  // а это все можно было бы в контроллер перенести\\
+  public static function addFilm(array $file, string $name): array {
+    $response = $this->addFileInStorage($file, $name, $this->filmsDir, $this->allowed['video']);
+    if ($response)
+      return Lib::responseArray("error", $response, "");
+
+    return Lib::responseArray("success", "Film uploaded ok", $this->filmsDir . $name . '.' . pathinfo($file['name'], PATHINFO_EXTENSION));
+  }
+
+  public static function addTrailer(array $file, string $name): array {
+    $response = $this->addFileInStorage($file, $name, $this->trilersDir, $this->allowed['video']);
+    if ($response) 
+      return Lib::responseArray("error", $response, "");
+      
+    return Lib::responseArray("success", "Trailer uploaded successfully", $this->trilersDir . $name . '.' . pathinfo($file['name'], PATHINFO_EXTENSION));
+  }
+
+  public static function addMiniature(array $file, string $name): array {
+    $response = $this->addFileInStorage($file, $name, $this->miniatureDir, $this->allowed['image']);
+    if ($response)
+      return Lib::responseArray("error", $response, "");
+
+    return Lib::responseArray("success", "Miniature uploaded successfully", $this->miniatureDir . $name . '.' . pathinfo($file['name'], PATHINFO_EXTENSION));
+  }
+
+
+  public static function deleteMiniature(string $name) : array {
+    $path = $this->miniatureDir . '{$name}//' . $name;
+    return $this->deleteFile($path);
+  }
+
+  public static function deleteFilm(string $name) : array {
+    $path = $this->filmsDir . '{$name}//' . $name;
+    return $this->deleteFile($path);
+  }
+
+  public static function deleteTrailer(string $name) : array {
+    $path = $this->trilersDir . '{$name}//' . $name;
+    return $this->deleteFile($path);
+  }
+
+
+  public static function swopFilm(array $file, string $name) : array {
+    $del = $this->deleteFilm($name);
+    if($del['status'] !== "success")
+      return $del;
+    $add = $this->addFilm($file,$name);
+    if($add['status'] !== "success")
+      return $del;
+    return Lib::responseArray("success","film swop");
+  }
+
+  public static function swopTrailer(array $file, string $name): array {
+    $del = $this->deleteFilm($name);
+    if($del['status'] !== "success")
+      return $del;
+    $add = $this->addFilm($file,$name);
+    if($add['status'] !== "success")
+      return $del;
+    return Lib::responseArray("success","film swop");
+  }
+
+  public static function swopMiniature(array $file, string $name): array {
+    $del = $this->deleteFilm($name);
+    if($del['status'] !== "success")
+      return $del;
+    $add = $this->addFilm($file,$name);
+    if($add['status'] !== "success")
+      return $del;
+    return Lib::responseArray("success","film swop");
+  }
+
+  public static function editFilmName() : array {
+
+  }
+
+  public static function editFilmLor() : array {
+
+  }
+
+  public static function editFilmRating() : array {
+    
+  }
+
+
+  // создать в базе балванку фильма
+  // заполнить туда трейлер фильм и икону
+  public function relaseFilm (
+    $name,$trailer,$miniatere,	$inStock
+  ) : array {
+    
+  } 
+
+
+
+}
+
+?>

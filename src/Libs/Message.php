@@ -1,7 +1,7 @@
 <?php
-namespace Assets;
-class Lib {
-  static function responseArray($status,$msg="",$data=null): array{
+namespace Libs;
+class Message {
+  static function array($status,$msg="",$data=null): array{
     return [
       "status" => $status,
       "msg" => $msg,

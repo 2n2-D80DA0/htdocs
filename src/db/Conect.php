@@ -15,8 +15,7 @@ class Conect
     private string $pass = '';
     private string $charset = 'utf8mb4';
 
-    private function __construct()
-    {
+    private function __construct(){
     $con = "mysql:host={$this->host};dbname={$this->db};charset={$this->charset}";
     try {
       $this->pdo = new PDO($con, $this->name, $this->pass, [
@@ -25,14 +24,14 @@ class Conect
         PDO::ATTR_EMULATE_PREPARES => false,                 
       ]);
     } catch(PDOException  $error) {
-      die("DB Connection failed: " . $error->getMessage());
+      return("DB Connection failed: " . $error->getMessage());
     }
   }
-  private function __clone() {}
-  public function __wakeup() {}
 
-  public static function getInstance(): Conect
-  {
+  // вырубаю клонирование
+  private function __clone() {}
+
+  public static function getInstance(): Conect{
     if (self::$instance === null)
       self::$instance = new Conect();
     return self::$instance;

@@ -1,11 +1,11 @@
 {
     "autoload": {
         "psr-4": {
-            "Controller\\": "src/controller/",
-            "Assets\\": "src/assets/",
-            "Services\\": "src/services/",
-            "Repository\\": "src/repository/",
-            "Core\\": "src/core/"
+            "AdminController\\": "admin/src/controller/",
+            "UserController\\": "user/src/controller/",
+            "db\\Repository\\": "src/db/repository/",
+            "db\\": "src/db/",
+            "Libs\\":"src/Libs/"
         }
     }
 }

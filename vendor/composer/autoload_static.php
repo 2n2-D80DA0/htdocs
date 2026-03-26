@@ -7,45 +7,45 @@ namespace Composer\Autoload;
 class ComposerStaticInit3a6d72587d402b0946b88fa6f77b3a21
 {
     public static $prefixLengthsPsr4 = array (
-        'S' =>
+        'd' =>
         array (
-            'Services\\' => 9,
+            'db\\Repository\\' => 14,
+            'db\\' => 3,
         ),
-        'R' =>
+        'U' =>
         array (
-            'Repository\\' => 11,
+            'UserController\\' => 15,
         ),
-        'C' =>
+        'L' =>
         array (
-            'Core\\' => 5,
-            'Controller\\' => 11,
+            'Libs\\' => 5,
         ),
         'A' =>
         array (
-            'Assets\\' => 7,
+            'AdminController\\' => 16,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Services\\' =>
+        'db\\Repository\\' =>
         array (
-            0 => __DIR__ . '/../..' . '/src/services',
+            0 => __DIR__ . '/../..' . '/src/db/repository',
         ),
-        'Repository\\' =>
+        'db\\' =>
         array (
-            0 => __DIR__ . '/../..' . '/src/repository',
+            0 => __DIR__ . '/../..' . '/src/db',
         ),
-        'Core\\' =>
+        'UserController\\' =>
         array (
-            0 => __DIR__ . '/../..' . '/src/core',
+            0 => __DIR__ . '/../..' . '/user/src/controller',
         ),
-        'Controller\\' =>
+        'Libs\\' =>
         array (
-            0 => __DIR__ . '/../..' . '/src/controller',
+            0 => __DIR__ . '/../..' . '/src/Libs',
         ),
-        'Assets\\' =>
+        'AdminController\\' =>
         array (
-            0 => __DIR__ . '/../..' . '/src/assets',
+            0 => __DIR__ . '/../..' . '/admin/src/controller',
         ),
     );
 

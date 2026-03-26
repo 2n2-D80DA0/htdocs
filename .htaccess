@@ -3,12 +3,6 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
 
-    # api и pub через один фронт-контроллер
-    RewriteRule ^api/(.*)$ pub/index.php?route=api/$1 [L,QSA]
-    RewriteRule ^$ pub/index.php?route=home [L,QSA]
-    RewriteRule ^(.*)$ pub/index.php?route=$1 [L,QSA]
+    RewriteRule ^ index.php [QSA,L]
 
-    # admin отдельно
-    RewriteRule ^admin?$ admin/index.php?route=home [L,QSA]
-    RewriteRule ^admin(.*)$ admin/index.php?route=$1 [L,QSA]
 </IfModule>

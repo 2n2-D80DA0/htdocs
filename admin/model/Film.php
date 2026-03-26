@@ -112,7 +112,9 @@ class Film{
     return Lib::responseArray("success","film swop");
   }
 
-
+  // создать в базе балванку фильма
+  // заполнить туда трейлер фильм и икону
+  // 
   public function relaseFilm (
     $name,$trailer,$miniatere,	$inStock
   ) : array {

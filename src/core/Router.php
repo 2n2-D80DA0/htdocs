@@ -1,95 +1,57 @@
 <?php
-  // Наверное тут есть методы что стоит вынести вне 
-  // потому-что они могут быть использованы только тут.
-  // И возможно надо было юзать Throw Exceptions 
-
-  // юзаю http_response_code(404) при ошибке возможно стоило бы сделать 
-  // ReturnError что-бы каждй раз не писать код ошибки
-
 namespace Core;
-use Assets\Lib;
+  // declare(strict_types=1);
 class Router
 {
-  public string $error = "error";
+  protected static array $routes = [];
 
-  public function __construct(array $str)
-  {
-    $this->className = "Controller\\" . $str["class"];
-    $this->method = $str["method"];
-    unset($str["class"]);
-    unset($str["method"]);
-    $this->quest = $str;
-    unset($str);
-  }
-  private function checkClass(): string|null
-  {
-    if (!class_exists($this->className) || $this->className === __CLASS__){
-      http_response_code(404);
-      return Lib::message($this->error, "invalid class", 1);
-    }
-    $this->class = new $this->className();
-    return null;
-  }
-  private function checkMethod(): string|null
-  {
-    if (!method_exists($this->class, $this->method)){
-      http_response_code(404);
-      return Lib::message($this->error, "invalid method", 1);
-    }
-      
-    return null;
-  }
-  private function checkParams(array $questValues, array $methodValues): string|null
-  {
+  protected string $uri;
+  protected string $httpMethod;
 
-    $a = $questValues;
-    $b = $methodValues;
-    sort($a);
-    sort($b);
-    // array_diff($questValues,$methodValues);
-    if ($a !== $b){
-      http_response_code(404);
-      return Lib::message(
-        $this->error, 
-        "invalid values, methot can get only", 
-        $this->method ."(" . (preg_replace("/[^a-zA-Z \,]/", "", json_encode($methodValues))) . ")");
-    }
-    return null;
+  public static function only(string $middleware) : void{
+    self::$routes[count(self::$routes)-1]["middleware"] = $middleware;
   }
-  // Получаем массив какие значение можнт принять метод вызываемого класса
-  private function getMethodValues(): array
-  {
-    $method = new \ReflectionMethod($this->class, $this->method);
-    $methodqueru = $method->getParameters();
-    $methodParams = [];
-    foreach ($methodqueru as $param) {
-      $methodParams[] = $param->getName();
+
+  public static function match(string $uri, string $method){
+    echo"g";
+    $uri = trim($uri, '/');
+    $method = strtoupper($method);
+
+    foreach (self::$routes as $route) {
+      if ($route['uri'] === $uri && $route['method'] === $method) {
+        return self::run(...$route['handler']);
+      }
     }
-    return $methodParams;
+    http_response_code(404);
+    header("location:/404");
   }
-  // Метод упорядочивания последовательности входных значений в массив
-  private function parm(array $methodValues): array
-  {
-    $params = [];
-    foreach ($methodValues as $key) {
-      $params[] = $this->quest[$key];
-    }
-    return $params;
+
+  protected static function run(string $class, string $method){
+    $controller = new $class();
+    return $controller->$method();
   }
-  // Выполнить;
-  public function run(): string
-  {
-    if ($error = $this->checkClass())
-      return $error;
 
-    if ($error = $this->checkMethod())
-      return $error;
+  protected static function add(string $uri, string|array $handler, string $httpMethod) : self {
+    self::$routes[] = [
+      'uri' => $uri,
+      'handler' => $handler,
+      'method' => $httpMethod,
+      'middleware' => false
+    ];
+    return new self();
+  }
 
-    $methodValues = $this->getMethodValues();
+  public static function get(string $uri, string|array $handler) : self {
+    return self::add($uri, $handler, "GET");
+  }
 
-    if ($error = $this->checkParams(array_keys($this->quest), $methodValues))
-      return $error;
-    // можно так же через инвоук сделать рефлекшен метода
-    return $this->class->{$this->method}(...$this->parm($methodValues));
+  public static function post(string $uri, string|array $handler) : self {
+    return self::add($uri, $handler, "POST");
+  }
+  
+  public static function patch(string $uri, string|array $handler) : self {
+    return self::add($uri, $handler, "PATCH");
   }
 }
+
+?>
