@@ -3,7 +3,7 @@
 namespace Admin\Controller;
 use Admin\Model;
 use Admin\View;
-class FilmController{
-
+class FilmPropertiesController{
+	
 }
 ?>

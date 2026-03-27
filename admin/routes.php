@@ -9,36 +9,36 @@ Router::get("/home", 	[PagesController::class,"home"]);
 //  █████╗  ██║██║     ██╔████╔██║███████╗
 //  ██╔══╝  ██║██║     ██║╚██╔╝██║╚════██║
 //  ██║     ██║███████╗██║ ╚═╝ ██║███████║
-//  ╚═╝     ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝
+//  ╚═╝     ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝                 
 
 Router::get(    
     "/films", 
-    [FilmController::class,"index"]
+    [FilmsController::class,"index"]
 );	//страница фильмов
 
 Router::get(
     "/film/([0-9]+)/edit",
-    [FilmController::class,"edit"]
+    [FilmsController::class,"edit"]
 ); //страница изменения фильма для админа
     
 Router::get(
     "/film/make",
-    [FilmController::class,"make"]
+    [FilmsController::class,"make"]
 );	//страница создания фильма для админа
 
 Router::post(
     "/film",
-    [FilmController::class,"addFilm"]
+    [FilmsController::class,"addFilm"]
 );	//запрос cоздание фильма 
 
 Router::patch(
     "/film/([0-9]+)", 				
-    [FilmController::class,"updateFilm"]
+    [FilmsController::class,"updateFilm"]
 );	//изменения чего-то в фильме от админа
 
 Router::delate(
     "film/([0-9]+)", 		
-    [FilmController::class,"destreoy"]
+    [FilmsController::class,"destreoy"]
 );	//удаления фильма из базы 
 
 
@@ -66,17 +66,10 @@ Router::edit(
 
 Router::delate(
     "/language/([0-9]+)",
-    [PropertiesController::class,"delateLanguage"]
+    [PropertiesController::class,"deleteLanguage"]
 );  // удалить язык из списка языков
 
-
-//  ██████╗ ██████╗  ██████╗ ██████╗       ███████╗██╗██╗     ███╗   ███╗
-//  ██╔══██╗██╔══██╗██╔═══██╗██╔══██╗      ██╔════╝██║██║     ████╗ ████║
-//  ██████╔╝██████╔╝██║   ██║██████╔╝█████╗█████╗  ██║██║     ██╔████╔██║
-//  ██╔═══╝ ██╔══██╗██║   ██║██╔═══╝ ╚════╝██╔══╝  ██║██║     ██║╚██╔╝██║
-//  ██║     ██║  ██║╚██████╔╝██║           ██║     ██║███████╗██║ ╚═╝ ██║
-//  ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝           ╚═╝     ╚═╝╚══════╝╚═╝     ╚═╝
-                                                                     
+                                                          
 Router::get(
     "/Genres", 																
     [PropertiesController::class,"getGenres"]
@@ -88,16 +81,21 @@ Router::put(
 );  // добавить язык в список языков
 
 Router::edit(
-    "/language/([0-9]+)",
+    "/Genre/([0-9]+)",
     [PropertiesController::class,"editGenre"]
 );  // удалить язык из списка языков
 
 Router::delate(
-    "/language/([0-9]+)",
-    [PropertiesController::class,"delateLanguage"]
+    "/Genre/([0-9]+)",
+    [PropertiesController::class,"delateGenre"]
 );  // удалить язык из списка языков
 
-
+//  ██████╗ ██████╗  ██████╗ ██████╗       ███████╗██╗██╗     ███╗   ███╗
+//  ██╔══██╗██╔══██╗██╔═══██╗██╔══██╗      ██╔════╝██║██║     ████╗ ████║
+//  ██████╔╝██████╔╝██║   ██║██████╔╝█████╗█████╗  ██║██║     ██╔████╔██║
+//  ██╔═══╝ ██╔══██╗██║   ██║██╔═══╝ ╚════╝██╔══╝  ██║██║     ██║╚██╔╝██║
+//  ██║     ██║  ██║╚██████╔╝██║           ██║     ██║███████╗██║ ╚═╝ ██║
+//  ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝           ╚═╝     ╚═╝╚══════╝╚═╝     ╚═╝
 
 Router::post(
     "/film/([0-9]+)/language/([0-9]+)", 		

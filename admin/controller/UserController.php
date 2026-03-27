@@ -5,31 +5,40 @@ use Admin\Model;
 use Admin\View;
 
 class UserController{
-	public static function banUser(){
+	public static function banUser(Request $request) : void {
+		$result = UsersModel::banUser($request->index("id"));
+		header('Content-Type: application/json');
+		http_response_code(($result['status'] === 'error') ? (400) : (200));
+		echo json_encode($result);
+	}
+	public static function unbanUser(Request $request) : void {
+		$result = UsersModel::banUser($request->index("id"));
+		header('Content-Type: application/json');
+		http_response_code(($result['status'] === 'error') ? (400) : (200));
+		echo json_encode($result);
+	}
+	public static function editUser(Request $request) : void {
+		$result = UsersModel::banUser($request->index("id"),$request->body());
+		header('Content-Type: application/json');
+		http_response_code(($result['status'] === 'error') ? (400) : (200));
+		echo json_encode($result);
+	}
+	public static function editUserName() : void {
 
 	}
-	public static function unbanUser(){
+	public static function editUserLogin() : void {
 
 	}
-	public static function editUser(){
+	public static function editUserPassword() : void {
 
 	}
-	public static function editUserName(){
+	public static function editUserEmail() : void {
 
 	}
-	public static function editUserLogin(){
-
-	}
-	public static function editUserPassword(){
-
-	}
-	public static function editUserEmail(){
-
-	}
-	public static function UpgradeUserRole(){
+	public static function UpgradeUserRole() : void {
  
 	}
-	public static function index(){
+	public static function index() : void {
  
 	}
 	

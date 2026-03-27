@@ -1,3 +1,4 @@
+
 <?php
 
 namespace Admin\Controller;
@@ -7,16 +8,16 @@ class CommentController{
     
   public static function delateComment(int $id) {
 
-
   }
+
   public static function getFilmComments(int $id) {
 
-
   }
+
   public static function getUserComments(int $id) {
 
-
   }
+
   public static function index(){
  
 	}
