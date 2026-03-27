@@ -1,6 +1,6 @@
 <?php
 
-namespace User\Controller;
+namespace admin\Controller;
 
 class ProfilController{
     

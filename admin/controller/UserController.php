@@ -1,6 +1,8 @@
 <?php
 
-namespace admin\Controller;
+namespace Admin\Controller;
+use Admin\Model;
+use Admin\View;
 
 class UserController{
 	public static function banUser(){
@@ -25,6 +27,9 @@ class UserController{
 
 	}
 	public static function UpgradeUserRole(){
+ 
+	}
+	public static function index(){
  
 	}
 	

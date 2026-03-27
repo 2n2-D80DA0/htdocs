@@ -1,9 +1,13 @@
 <?php
 
-namespace User\Controller;
+namespace admin\Controller;
 
-class CommentController{
+class CommentController{    
     
+  public static function delateComment(int $id) {
+
+  }
+
 }
 
 ?>

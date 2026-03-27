@@ -111,3 +111,11 @@ class ApiRouter
     return $this->class->{$this->method}(...$this->parm($methodValues));
   }
 }
+
+
+
+
+
+
+
+ FOREIGN KEY (film_id)          REFERENCES films(id)      ON DELETE CASCADE ON UPDATE CASCADE,

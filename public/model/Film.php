@@ -13,18 +13,12 @@ class Film{
   ];
 
   // можно сделать кароче и читаемее но не буду \\
-  private static function addFileInStorage(array $file, string $name, string $dir, array $exts) : string|null {
+  private function addFileInStorage(array $file, string $name, string $dir, array $exts) : string|null {
     if ($file['error'] !== UPLOAD_ERR_OK)
       return "Upload error";
     $ext = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
     if (!in_array($ext, $exts))
       return "Invalid file extension";
-
-    $path = $dir . "/{$name}/";
-    
-    if (!is_dir($path))
-      if (!mkdir($path, 0777, true))
-        return "Failed to create directory";
 
     $filename = $name . '.' . $ext;
     $target = $dir . $filename;
@@ -35,22 +29,19 @@ class Film{
     return null;
   }
 
-  private static function deleteFile(string $path) : string|null {
+  private function deleteFile(string $path) : array {
     if (!file_exists($path))
-      return "File does not exist";
+      return Lib::responseArray("error", "File does not exist", $path);
 
     if (!unlink($path))
-      return "Failed to delete file";
+      return Lib::responseArray("error", "Failed to delete file", $path);
 
-    if(!rmdir($path."../"))
-      return "Failed to delate path";
-
-    return null;
+    return Lib::responseArray("success", "File deleted successfully", $path);
   }
 
 
   // а это все можно было бы в контроллер перенести\\
-  public static function addFilm(array $file, string $name): array {
+  public function addFilm(array $file, string $name): array {
     $response = $this->addFileInStorage($file, $name, $this->filmsDir, $this->allowed['video']);
     if ($response)
       return Lib::responseArray("error", $response, "");
@@ -58,7 +49,7 @@ class Film{
     return Lib::responseArray("success", "Film uploaded ok", $this->filmsDir . $name . '.' . pathinfo($file['name'], PATHINFO_EXTENSION));
   }
 
-  public static function addTrailer(array $file, string $name): array {
+  public function addTrailer(array $file, string $name): array {
     $response = $this->addFileInStorage($file, $name, $this->trilersDir, $this->allowed['video']);
     if ($response) 
       return Lib::responseArray("error", $response, "");
@@ -66,7 +57,7 @@ class Film{
     return Lib::responseArray("success", "Trailer uploaded successfully", $this->trilersDir . $name . '.' . pathinfo($file['name'], PATHINFO_EXTENSION));
   }
 
-  public static function addMiniature(array $file, string $name): array {
+  public function addMiniature(array $file, string $name): array {
     $response = $this->addFileInStorage($file, $name, $this->miniatureDir, $this->allowed['image']);
     if ($response)
       return Lib::responseArray("error", $response, "");
@@ -75,23 +66,23 @@ class Film{
   }
 
 
-  public static function deleteMiniature(string $name) : array {
-    $path = $this->miniatureDir . '{$name}//' . $name;
+  public function deleteMiniature(string $filename) : array {
+    $path = $this->miniatureDir . $filename;
     return $this->deleteFile($path);
   }
 
-  public static function deleteFilm(string $name) : array {
-    $path = $this->filmsDir . '{$name}//' . $name;
+  public function deleteFilm(string $filename) : array {
+    $path = $this->filmsDir . $filename;
     return $this->deleteFile($path);
   }
 
-  public static function deleteTrailer(string $name) : array {
-    $path = $this->trilersDir . '{$name}//' . $name;
+  public function deleteTrailer(string $filename) : array {
+    $path = $this->trilersDir . $filename;
     return $this->deleteFile($path);
   }
 
 
-  public static function swopFilm(array $file, string $name) : array {
+  public function swopFilm(array $file, string $name) : array {
     $del = $this->deleteFilm($name);
     if($del['status'] !== "success")
       return $del;
@@ -101,7 +92,7 @@ class Film{
     return Lib::responseArray("success","film swop");
   }
 
-  public static function swopTrailer(array $file, string $name): array {
+  public function swopTrailer(array $file, string $name): array {
     $del = $this->deleteFilm($name);
     if($del['status'] !== "success")
       return $del;
@@ -111,7 +102,7 @@ class Film{
     return Lib::responseArray("success","film swop");
   }
 
-  public static function swopMiniature(array $file, string $name): array {
+  public function swopMiniature(array $file, string $name): array {
     $del = $this->deleteFilm($name);
     if($del['status'] !== "success")
       return $del;
@@ -120,27 +111,25 @@ class Film{
       return $del;
     return Lib::responseArray("success","film swop");
   }
-
-  public static function editFilmName() : array {
-
-  }
-
-  public static function editFilmLor() : array {
-
-  }
-
-  public static function editFilmRating() : array {
-    
-  }
-
 
   // создать в базе балванку фильма
   // заполнить туда трейлер фильм и икону
+  // 
   public function relaseFilm (
     $name,$trailer,$miniatere,	$inStock
   ) : array {
     
   } 
+  // [
+  //   "name"=>$name
+  //   "lor"=>"$lor"
+  //   // "flm_src"=>""
+  //   // "trailer_src"=>"$"
+  //   // "miniature_src"=>"$src"
+  //   "film_release"=>"$date"
+  //   "duriation"=>""
+  //   "name"=>""
+  // ]
 
 
 

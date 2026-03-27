@@ -2,12 +2,11 @@
 
 
 namespace Services;
-use db\Repository;
-use Libs;
+use Repository;
 
 class AuthService{
   private User  $userRepository;
-  
+
   public function __construct(User $userRepo) {
     $this->userRepository = $userRepo;
   }
@@ -30,12 +29,15 @@ class AuthService{
     if (strlen($password) < 8)                      return "The password must be at least 8 characters";
     if ($password !== $success_password)            return "passwords don't match";
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) return "email is already registered";
-
+    // if ($this->userRepository->getByLogin($login))        return "Login is already taken";
+    // if ($this->userRepository->getByEmail($email))        return "Email is already taken";
+    
     $passwordHash = password_hash($password, PASSWORD_BCRYPT);
-    $add = userRepository::createUser($login,$name,$namelast,$email,$passwordHash);
+    // $result = $this->userRepository->createUser($login,$name,$namelast,$email,$passwordHash);
+    if ($result["status"] == "error") 
+      return $result["msg"];
 
-    if ($add["status"] == "error")  return json_decode($add);
-    else return Message::array("succeess","UserMake",["userid"=>$add['data']['userId']]);
+    return \Lib();
   }
 }
 
