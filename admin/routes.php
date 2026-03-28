@@ -97,6 +97,28 @@ Router::delate(
 //  ██║     ██║  ██║╚██████╔╝██║           ██║     ██║███████╗██║ ╚═╝ ██║
 //  ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝           ╚═╝     ╚═╝╚══════╝╚═╝     ╚═╝
 
+
+Router::get(
+    "/film/([0-9]+)/languages", 		
+    [FilmPropertiesController::class,"filmLanguages"]
+);  // все языки в конкретном фильме
+
+Router::get(
+    "/film/([0-9]+)/Genres", 		
+    [FilmPropertiesController::class,"filmGanres"]
+);  // все жанры в кронкретном фильме
+
+
+Router::get(
+    "/ganre/([0-9]+)/films", 		
+    [FilmPropertiesController::class,"filmsWithGanre"]
+);  // все фильмы про конкретный жанр
+
+Router::get(
+    "/language/([0-9]+)/films", 		
+    [FilmPropertiesController::class,"filmsWithlanguage"]
+);  // все фильмы с конкретным языком
+
 Router::post(
     "/film/([0-9]+)/language/([0-9]+)", 		
     [FilmPropertiesController::class,"linkLang"]
@@ -157,7 +179,9 @@ Router::delete(
 //  ██╔═══╝ ██╔══╝  ██╔══██╗╚════██║╚════╝██╔══╝  ██║██║     ██║╚██╔╝██║
 //  ██║     ███████╗██║  ██║███████║      ██║     ██║███████╗██║ ╚═╝ ██║
 //  ╚═╝     ╚══════╝╚═╝  ╚═╝╚══════╝      ╚═╝     ╚═╝╚══════╝╚═╝     ╚═╝
-                                                                    
+                      
+
+
 Router::post(
     "/film/([0-9]+)/actor/([0-9]+)",
     [FilmPersonsController::class,"addActor"]

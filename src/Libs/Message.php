@@ -1,6 +1,7 @@
 <?php
-namespace Libs;
-class Message {
+namespace libs;
+class Response {
+  
   static function array($status,$msg="",$data=null): array{
     return [
       "status" => $status,
@@ -8,6 +9,7 @@ class Message {
       "data" => $data
     ];
   }  
+
   static function message($status,$msg="",$data=null): string{
     return json_encode([
       "status" => $status,
@@ -15,9 +17,11 @@ class Message {
       "data" => $data
     ]);
   }  
+  
   static function decodeMessage($str): array{
     return json_decode($str, true);
   }  
+  
   static function randomSimvols(int $length = 12) : string {
     $chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
     $name = '';
@@ -26,4 +30,11 @@ class Message {
     }
     return $name;
   }
+
+  static function jsonResponse(array $result): void {
+    header('Content-Type: application/json');
+    http_response_code($result['status'] === 'error' ? 400 : 200);
+    echo json_encode($result);
+  }
 }
+
