@@ -7,41 +7,51 @@
 // ╚═╝     ╚═╝╚═╝  ╚═══╝╚═╝╚══════╝╚═╝  ╚═╝
 
 namespace Admin\Controller;
-use Model;
-use VieW;
-use libs;
+use Admin\Model\FilmsModel;
+use Admin\Model\LanguageModel;
+use Admin\Model\GenreModel;
+use Core\Request;
+use View;
 
 class FilmsController{
 
 	public static function index (Request $request) : void {
-		$films = filmModel::getAll();
+		$films = FilmsModel::getAll();
 		http_response_code(200);
 		require __DIR__ . '/../view/films.php';
 	} 
 
-	public static function make () : void {
+	public static function make (Request $request) : void {
 		http_response_code(200);
-		require __DIR__ . '/../view/filmMake.php';
+		$genres = GenreModel::getAll();
+		$languages = LanguageModel::getAll();
+
+		require __DIR__ . '/../view/addFilm.php';
 	} 
 
 	public static function edit (Request $request) : void {
 		http_response_code(200);
-		$film = filmModel::getFilm($request->$id);
+		$film = FilmsModel::getFilm($request->quest("id"));
 		require __DIR__ . '/../view/filmEdit.php';
 	}
 
 	public static function updateFilm (Request $request) : void {
-		$result = FilmModel::edit($request->input("id"), $request->body());
+		$result = FilmsModel::edit($request->input("id"), $request->body());
 		Response::jsonResponse($result);
 	} 
 
 	public static function addFilm (Request $request) : void {
-		$result = FilmModel::add($request->body());
+		$result = FilmsModel::add($request->body());
+		Response::jsonResponse($result);
+	}
+
+	public static function anonsFilm (Request $request) : void {
+		$result = FilmsModel::add($request->body());
 		Response::jsonResponse($result);
 	}
 
 	public static function destreoy (Request $request) : void {
-		$result = FilmModel::destreoy($request->params());
+		$result = FilmsModel::destreoy($request->params());
 		Response::jsonResponse($result);
 	}
 }

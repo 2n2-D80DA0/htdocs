@@ -1,6 +1,6 @@
 <?php
 namespace Repository;
-class Genre{
+class FilmPersonsRepository{
 
 }
 

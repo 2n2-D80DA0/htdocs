@@ -1,7 +1,7 @@
 <?php
-namespace libs;
+namespace Core;
 class Response {
-  
+
   static function array($status,$msg="",$data=null): array{
     return [
       "status" => $status,

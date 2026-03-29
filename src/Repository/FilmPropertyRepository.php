@@ -1,6 +1,6 @@
 <?php
 namespace Repository;
-class Association{
+class FilmPropertyRepository{
 
 }
 

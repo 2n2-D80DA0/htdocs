@@ -7,8 +7,7 @@
 // ╚═╝     ╚═╝╚═╝  ╚═══╝╚═╝╚══════╝╚═╝  ╚═╝
                                         
 namespace Controller;
-use Admin\Model;
-use Admin\View;
+use Admin\Model\LanguageModel;
 use libs;                  
 class LanguageController{
 

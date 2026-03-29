@@ -40,6 +40,10 @@ class Conect
   public function getConnection() : PDO{
     return $this->pdo;
   }
+  
+  public static function pdo(): PDO {
+    return self::getInstance()->getConnection();
+	}
 }
 
 ?>

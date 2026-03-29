@@ -7,8 +7,7 @@
 // ╚═╝     ╚═╝╚═╝  ╚═══╝╚═╝╚══════╝╚═╝  ╚═╝
 
 namespace Controller;
-use Admin\Model;
-use Admin\View;
+use Admin\Model\GenreModel;
 use libs;
 
 class GenreController{

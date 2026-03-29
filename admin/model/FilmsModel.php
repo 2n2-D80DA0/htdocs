@@ -1,8 +1,9 @@
 <?php
-namespace Services;
+namespace Admin\Model;
 use Assets\Lib;
+use Repository\FilmsRepository;
 
-class Film{
+class FilmsModel{
   private string $filmsDir = __DIR__ . '../../storage/films/';
   private string $trilersDir = __DIR__ . '../../storage/trailers/';
   private string $miniatureDir = __DIR__ . '../../storage/miniature/';
@@ -38,6 +39,15 @@ class Film{
 
     return Lib::responseArray("success", "File deleted successfully", $path);
   }
+
+  public static function getAll(): array {
+    return FilmsRepository::getAll();
+  }
+  public static function getFilm(int $id): array {
+    return FilmsRepository::getFilm($id);
+  }
+
+
 
 
   // а это все можно было бы в контроллер перенести\\
