@@ -40,8 +40,10 @@ foreach($films as $film){
 ?>
   <tr>
     <td class="poster" rowspan="9">
-      <img src="poster.jpg" alt="Постер">
+      <?php $img =  scandir(__dir__."../../../storage/miniature/".$film['id'])["2"]?>
+      <img src="http://localhost/storage/miniature/<?=$film['id']."/".$img ?>" alt="Постер">
     </td>
+    
     <td class="title"><?=$film['name']?></td>
   </tr>
   <tr>
@@ -51,7 +53,7 @@ foreach($films as $film){
     <td><strong>Жанр:</strong> <?=$film['name']?></td>
   </tr>
   <tr>
-    <td><strong>В режиссёрах:</strong> в продах</td>
+    <td><strong>В режиссёрах:</strong> в продах </td>
   </tr>
   <tr>
     <td><strong>В продюсерах:</strong> в режисерах</td>

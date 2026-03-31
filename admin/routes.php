@@ -11,6 +11,9 @@ use Admin\Controller\CommentController;
 use Admin\Controller\UserController;
 use Admin\Controller\RatingController;
 
+use Admin\Controller\GenreController;
+use Admin\Controller\LanguageController;
+
 Router::get("/404", 	[PagesController::class,"error404"]);
 Router::get("/logout", 	[PagesController::class,"logout"]);
 Router::get("/home", 	[PagesController::class,"home"]);
@@ -63,43 +66,43 @@ Router::delete(
 
 Router::get(
     "admin/languages", 																
-    [PropertiesController::class,"getLanguages"]
+    [LanguageController::class,"getLanguages"]
 );  // получить языки 
 
 Router::put(
     "admin/language",
-    [PropertiesController::class,"addLanguage"]
+    [LanguageController::class,"addLanguage"]
 );  // добавить язык в список языков
 
 Router::patch(
     "admin/language/(?<id>[0-9]+)",
-    [PropertiesController::class,"editLanguage"]
+    [LanguageController::class,"editLanguage"]
 );  // удалить язык из списка языков
 
 Router::delete(
     "admin/language/(?<id>[0-9]+)",
-    [PropertiesController::class,"deleteLanguage"]
+    [LanguageController::class,"deleteLanguage"]
 );  // удалить язык из списка языков
 
                                                           
 Router::get(
     "admin/genres", 																
-    [PropertiesController::class,"getGenres"]
+    [GenreController::class,"getGenres"]
 );  // получить языки 
 
 Router::put(
     "admin/genre",
-    [PropertiesController::class,"addGenre"]
+    [GenreController::class,"addGenre"]
 );  // добавить язык в список языков
 
 Router::patch(
     "admin/genre/(?<id>[0-9]+)",
-    [PropertiesController::class,"editGenre"]
+    [GenreController::class,"editGenre"]
 );  // удалить язык из списка языков
 
 Router::delete(
     "admin/genre/(?<id>[0-9]+)",
-    [PropertiesController::class,"deleteGenre"]
+    [GenreController::class,"deleteGenre"]
 );  // удалить язык из списка языков
 
 //  ██████╗ ██████╗  ██████╗ ██████╗       ███████╗██╗██╗     ███╗   ███╗
@@ -161,7 +164,7 @@ Router::delete(
 
 Router::get(
     "admin/persons",
-    [PersonsController::class,"getPersons"]
+    [PersonsController::class,"index"]
 );  // все персоны
 
 Router::get(
@@ -169,9 +172,9 @@ Router::get(
     [PersonsController::class,"personEdit"]
 );  // просмотр всех персон
 
-Router::put(
+Router::get(
     "admin/person",
-    [PersonsController::class,"addPerson"]
+    [PersonsController::class,"make"]
 );  // создать персону
 
 Router::patch(
@@ -335,30 +338,36 @@ Router::delete(
     [RatingController::class,"desreoy"]
 );  // удаления рейтинга
 
-echo "<pre>";
+// echo "<pre>";
 // print_r($_SERVER);
 
+// print_r($_SERVER['REDIRECT_URL']);
 
 if($_SERVER['REQUEST_METHOD'] === "GET"){
     Router::match($_SERVER['REDIRECT_URL'],"GET");
 }else {
-    Router::match($_SERVER['request_uri'],$post["method"]);
+    // $json = file_get_contents('php://input');
+    // $post = json_decode($json,true);
+    // $method = $post["method"];
+    // $_POST = $post;
+    $file = 'data.txt';
+    // file_put_contents($file, json_decode($json,true)["genres"]."\n", FILE_APPEND);
+    Router::match($_SERVER['REDIRECT_URL'], $_POST["method"]);
 }
-echo "</pre>";
+// echo "</pre>";
+// <!-- CREATE TABLE comments (
+//     id         INT PRIMARY KEY AUTO_INCREMENT,
+//     user_id     INT NOT NULL,
+//     film_id   INT NOT NULL,
+//     comment    TEXT NOT NULL,
+//     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
+//     FOREIGN KEY (user_id)  REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE,
+//     FOREIGN KEY (film_id) REFERENCES films(id) ON DELETE CASCADE ON UPDATE CASCADE
+// ); -->
 ?>
 
 
 
 
 
-<!-- CREATE TABLE comments (
-    id         INT PRIMARY KEY AUTO_INCREMENT,
-    user_id     INT NOT NULL,
-    film_id   INT NOT NULL,
-    comment    TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-
-    FOREIGN KEY (user_id)  REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (film_id) REFERENCES films(id) ON DELETE CASCADE ON UPDATE CASCADE
-); -->

@@ -15,6 +15,22 @@ class FilmsRepository{
 		$this->db = Conect::getInstance()->getConnection();
 	}
 
+	public static function addFilm($film) {
+		$pdo = Conect::pdo();
+		$stmt = $pdo->prepare("
+			INSERT INTO films (name, film_release, lor)
+			VALUES (:name, :release, :lor);
+		");
+		$stmt->execute([
+			':name' => $film["film_name"],
+			':release' => $film["release_date"], 
+			':lor' => $film["lor"]
+		]); 
+		// $raw = file_get_contents('php://input');
+		$stmt->fetchAll();                                                                                                                                                                                                
+		return($pdo->lastInsertId());
+	}
+
 	public static function getAll() : array {
 		$pdo = Conect::pdo();
 		$stmt = $pdo->prepare("SELECT * FROM films");

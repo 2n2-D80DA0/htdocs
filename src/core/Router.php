@@ -13,15 +13,15 @@ class Router
 
   public static function match(string $uri, string $method) {
     $uri = trim($uri, '/');
-    if ($method === 'POST' && isset($_POST['_method']))
-      $method = strtoupper($_POST['_method']);
     
+    if ($method === 'POST' && isset($_POST['method']))
+      $method = strtoupper($_POST['method']);
     foreach (self::$routes as $route) {
-      if ($route['method'] !== $method)
+      if ($route['method'] !== strtoupper($method))
         continue;
       
       $pattern = '#^' . $route['uri'] . '$#';
-
+      // print_r($route);
       if (preg_match($pattern, $uri, $matc)){
         
         $params = array_filter($matc, 'is_string', ARRAY_FILTER_USE_KEY);
@@ -29,13 +29,13 @@ class Router
         $params = array_map(function ($v) {
           return ctype_digit($v) ? (int)$v : $v;
         }, $params);
-        // print_r($params);
         $request = new Request($_POST, $params);
-        // print_r($params);
+        $file = 'data.txt';
+        file_put_contents($file, (serialize($_POST)??"null")."\n", FILE_APPEND);
         return self::run($route['handler'], $request);
       }
     }
-
+  
     http_response_code(404);
     echo "404";
   }

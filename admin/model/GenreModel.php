@@ -9,16 +9,16 @@ class GenreModel{
 		return $films = GenresRepository::getAll();
 	} 
 
-  public static function add (string $enName,string $ruName) : array {
-    return $films = GenresRepository::add($enName,$ruName);
+  public static function add (string $enName, string $ruName) : void {
+    $films = GenresRepository::add($enName,$ruName);
 	} 
 
-  public static function edit (int $id,string $enName,string $ruName) : array {
-    return $films = GenresRepository::edit();
+  public static function edit (int $id,string $enName,string $ruName) : void {
+    $films = GenresRepository::edit( $id, $enName, $ruName);
 	}
   
-  public static function destreoy (int $id) : array {
-    return $films = GenresRepository::destreoy();
+  public static function destreoy (int $id) : void {
+    $films = GenresRepository::destreoy($id);
 	}
 }
 ?>

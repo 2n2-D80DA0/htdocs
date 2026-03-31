@@ -10,6 +10,7 @@ namespace Admin\Controller;
 use Admin\Model\FilmsModel;
 use Admin\Model\LanguageModel;
 use Admin\Model\GenreModel;
+use Core\Response;
 use Core\Request;
 use View;
 
@@ -41,7 +42,8 @@ class FilmsController{
 	} 
 
 	public static function addFilm (Request $request) : void {
-		$result = FilmsModel::add($request->body());
+		
+		$result = FilmsModel::add($request->quest(),$_FILES['poster'],$_FILES['movie'],$_FILES['trailer']);
 		Response::jsonResponse($result);
 	}
 
