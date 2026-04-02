@@ -1,4 +1,7 @@
 <?php
+session_start();
+
+
 
 require __DIR__. "/../vendor/autoload.php";
 use Core\Router;
@@ -10,15 +13,17 @@ use Admin\Controller\FilmPersonsController;
 use Admin\Controller\CommentController;
 use Admin\Controller\UserController;
 use Admin\Controller\RatingController;
+use Admin\Controller\AdminController;
 
 use Admin\Controller\GenreController;
 use Admin\Controller\LanguageController;
 
 Router::get("/404", 	[PagesController::class,"error404"]);
-Router::get("/logout", 	[PagesController::class,"logout"]);
-Router::get("/home", 	[PagesController::class,"home"]);
-
-
+// echo"pre";
+Router::get(
+    "admin/home",
+    [AdminController::class,"index"]
+);
 //  ███████╗██╗██╗     ███╗   ███╗███████╗
 //  ██╔════╝██║██║     ████╗ ████║██╔════╝
 //  █████╗  ██║██║     ██╔████╔██║███████╗
@@ -26,7 +31,7 @@ Router::get("/home", 	[PagesController::class,"home"]);
 //  ██║     ██║███████╗██║ ╚═╝ ██║███████║
 //  ╚═╝     ╚═╝╚══════╝╚═╝     ╚═╝╚══════╝                 
 // echo FilmsController::index();
-Router::get(    
+Router::get(
     "admin/films", 
     [FilmsController::class,"index"]
 );	//страница фильмов
@@ -37,7 +42,7 @@ Router::get(
 ); //страница изменения фильма для админа
     
 Router::get(
-    "admin/film/make",
+    "admin/film",
     [FilmsController::class,"make"]
 );	//страница создания фильма для админа
 
@@ -176,6 +181,12 @@ Router::get(
     "admin/person",
     [PersonsController::class,"make"]
 );  // создать персону
+
+Router::put(
+    "admin/person",
+    [PersonsController::class,"addPerson"]
+);  // создать персону
+
 
 Router::patch(
     "admin/person/(?<id>[0-9]+)",
@@ -338,22 +349,41 @@ Router::delete(
     [RatingController::class,"desreoy"]
 );  // удаления рейтинга
 
-// echo "<pre>";
-// print_r($_SERVER);
-
-// print_r($_SERVER['REDIRECT_URL']);
-
+    
 if($_SERVER['REQUEST_METHOD'] === "GET"){
     Router::match($_SERVER['REDIRECT_URL'],"GET");
 }else {
-    // $json = file_get_contents('php://input');
-    // $post = json_decode($json,true);
-    // $method = $post["method"];
-    // $_POST = $post;
     $file = 'data.txt';
-    // file_put_contents($file, json_decode($json,true)["genres"]."\n", FILE_APPEND);
-    Router::match($_SERVER['REDIRECT_URL'], $_POST["method"]);
+    file_put_contents($file,"files" . serialize($_FILES)."\n", FILE_APPEND);
+    file_put_contents($file,"post" . serialize($_POST)."\n", FILE_APPEND);
+    Router::match($_SERVER['REDIRECT_URL'], $_POST["action"]);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // echo "</pre>";
 // <!-- CREATE TABLE comments (
 //     id         INT PRIMARY KEY AUTO_INCREMENT,

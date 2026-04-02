@@ -1,7 +1,9 @@
 <?php
 namespace Repository;
 use Core\Conect;
+use Core\Storage;
 use PDO;
+
 class PersonRepository{
 
   public static function getAll(): array {
@@ -13,15 +15,24 @@ class PersonRepository{
 
   }
 
-  public static function add(string $enName, string $ruName): int {
+  public static function add(string $name, string $namelastm, string $born, bool $gender, string $wiki): int {
     $pdo = Conect::pdo();
     $stmt = $pdo->prepare("
-      INSERT INTO genres (en_name, ru_name)
-      VALUES (:enName, :ruName)
+      INSERT INTO peoples (name, namelast,born_date,gender,wiki_src)
+      VALUES (
+        :name,
+        :namelastm,
+        :born,
+        :gender,
+        :wiki)
     ");
+
     $stmt->execute([
-      ':enName' => $enName,
-      ':ruName' => $ruName
+    ':name'=>$name,
+    ':namelastm'=>$namelastm,
+    ':born'=>$born,
+    ':gender'=>$gender,
+    ':wiki'=>$wiki
     ]);
     return $pdo->lastInsertId();
   }

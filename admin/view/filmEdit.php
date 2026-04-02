@@ -1,9 +1,8 @@
+<?php
+require __DIR__."/../Partials/header.php";
+require __DIR__."/../Partials/sidebar.php";
 
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Фильм</title>
+?>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -30,8 +29,6 @@
       font-weight: bold;
     }
   </style>
-</head>
-<body>
 
 <table>
 
@@ -74,5 +71,7 @@
 
 </table>
 
-</body>
-</html>
+
+<?php
+require __DIR__."/../Partials/footer.php";
+?>

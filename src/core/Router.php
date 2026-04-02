@@ -74,7 +74,7 @@ class Router
   }
 
   public static function put(string $uri, string|array $handler) : self {
-    return self::add($uri, $handler, "PUT");
+    return self::add($uri, $handler, "ADD");
   }
 
   public static function delete(string $uri, string|array $handler) : self {

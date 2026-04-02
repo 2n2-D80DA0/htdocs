@@ -1,5 +1,10 @@
-<!-- Форма создания -->
-<form action="http://localhost/admin/genre" method="post">
+<?php
+require __DIR__."/../Partials/header.php";
+require __DIR__."/../Partials/sidebar.php";
+
+?>
+<div class="container">
+    <form action="http://localhost/admin/genre" method="post">
     <input type="hidden" name="method" value="put">
 
     <input type="text" name="ru_name" placeholder="Русское название" required>
@@ -35,10 +40,10 @@
                 </td>
 
                 <td>
-                    <button type="submit" name="method" value="patch">
+                    <button type="submit" name="action" value="patch">
                         Сохранить
                     </button>
-                    <button type="submit" name="method" value="delete"
+                    <button type="submit" name="action" value="delete"
                             onclick="return confirm('Удалить?')">
                         Удалить
                     </button>
@@ -49,3 +54,9 @@
 
     </tbody>
 </table>
+</div>
+
+
+<?php
+require __DIR__."/../Partials/footer.php";
+?>

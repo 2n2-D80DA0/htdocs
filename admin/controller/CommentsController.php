@@ -37,8 +37,6 @@ class CommentController{
     $comments = $result["data"];
 		require __DIR__ . '/../view/comments.php';
   }
-  
-
 }
 
 ?>

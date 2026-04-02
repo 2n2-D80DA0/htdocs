@@ -1,4 +1,9 @@
-<!-- Форма создания -->
+<?php
+require __DIR__."/../Partials/header.php";
+require __DIR__."/../Partials/sidebar.php";
+
+?>
+<div class="container">
 <form action="http://localhost/admin/language" method="post">
     <input type="hidden" name="method" value="put">
 
@@ -49,3 +54,10 @@
 
     </tbody>
 </table>
+</div>
+
+
+
+<?php
+require __DIR__."/../Partials/footer.php";
+?>

@@ -42,6 +42,7 @@ class FilmsController{
 	} 
 
 	public static function addFilm (Request $request) : void {
+		print_r($request->quest());
 		
 		$result = FilmsModel::add($request->quest(),$_FILES['poster'],$_FILES['movie'],$_FILES['trailer']);
 		Response::jsonResponse($result);
@@ -53,7 +54,7 @@ class FilmsController{
 	}
 
 	public static function destreoy (Request $request) : void {
-		$result = FilmsModel::destreoy($request->params());
+		$result = FilmsModel::delete($request->params("id"));
 		Response::jsonResponse($result);
 	}
 }

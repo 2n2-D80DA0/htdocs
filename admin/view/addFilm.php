@@ -1,32 +1,15 @@
 <?php
-// addFilm.php
+require __DIR__."/../Partials/header.php";
+require __DIR__."/../Partials/sidebar.php";
+
 ?>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Добавить фильм</title>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        .container { max-width: 800px; margin: auto; }
-        label { display: block; margin-top: 10px; }
-        input, select, textarea, button { margin-top: 5px; width: 100%; padding: 5px; }
-        .genres-container { display: flex; gap: 20px; margin-top: 10px; }
-        .genres-list, .selected-genres { height: fit-content;   flex-wrap: wrap; display:flex; flex: 1; border: 1px solid #ccc; padding: 10px; min-height: 100px; }
-        .genre-item {border: 1px solid red;
-    padding: 5px; cursor: pointer; padding: 5px; border-bottom: 1px solid #eee; }
-        .genre-item:hover { background-color: #f0f0f0; }
-        .file-input { margin-top: 5px; }
-    </style>
-</head>
-<body>
 <div class="container">
   <h1>Добавить фильм</h1>
-  <form id="addFilmForm" action="http://localhost/admin/film" method="post" enctype="multipart/form-data">
+  <form id="addFilmForm" action="/admin/film" method="post" enctype="multipart/form-data">
     <label>Название фильма:
       <input type="text" name="film_name" required>
     </label>
-
+<input type="hidden" name="sessid" value="<?=session_id()?>">
     <label>Описание:
       <textarea name="lor" rows="4" required></textarea>
     </label>
@@ -39,7 +22,7 @@
       <select name="language" required>
         <option value="">Выберите язык</option>
         <?php foreach($languages as $index => $lang): ?>
-          <option value="<?= $index ?>"><?= htmlspecialchars($lang['ru_name']) ?></option>
+          <option value="<?= $index ?>"><?= $lang['ru_name'] ?></option>
         <?php endforeach; ?>
       </select>
     </label>
@@ -49,14 +32,13 @@
       <div class="genres-list">
         <h4>Доступные жанры</h4>
         <?php foreach($genres as $index => $genre){ ?>
-          <div class="genre-item" data-index="<?= $index ?>"><?= htmlspecialchars($genre['ru_name']) ?></div>
+          <div class="genre-item" data-index="<?= $index ?>"><?= $genre['ru_name'] ?></div>
         <?php }; ?>
       </div>
       <div class="selected-genres">
-        <h4>Выбранные жанры</h4>
       </div>
     </div>
-    <input type="text" name="method" value="put" >
+    <input type="hidden" name="action" value="add" >
 
     <label>Постер:
       <input type="file" name="poster" accept="image/*" class="file-input" required>
@@ -69,29 +51,42 @@
     </label>
 
     <button type="submit">Добавить фильм</button>
-  </form>
+  </form>            
+
 </div>
 
 <script>
     const availableGenres = document.querySelectorAll('.genre-item');
     const selectedGenresContainer = document.querySelector('.selected-genres');
-
     availableGenres.forEach(item => {
       item.addEventListener('click', () => {
         if (!selectedGenresContainer.querySelector(`[data-index='${item.dataset.index}']`)) {
           const cloned = item.cloneNode(true);
+          
           cloned.addEventListener('click', () => cloned.remove());
           selectedGenresContainer.appendChild(cloned);
         }
       });
     });
-    // const form = document.getElementById('addFilmForm');
-    // form.addEventListener('submit', async (e) => {
-    //   e.preventDefault();
 
-    //   const formData = new FormData(form);
-    //   const selectedGenres = Array.from(selectedGenresContainer.querySelectorAll('.genre-item'))
+    
+    const form = document.getElementById('addFilmForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const id = [...selectedGenresContainer.children].map(el => el.dataset.index);
+      const formData = new FormData(form);
       
+      formData.append("postArray",JSON.stringify(id));
+
+      const selectedGenres = Array.from(selectedGenresContainer.querySelectorAll('.genre-item'));
+      fetch("/admin/film", {method:"POST", body:formData});
+    });
 </script>
-</body>
-</html>
+<style>
+
+</style>
+
+
+<?php
+require __DIR__."/../Partials/footer.php";
+?>

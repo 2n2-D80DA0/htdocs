@@ -1,37 +1,8 @@
+<?php
+require __DIR__."/../Partials/header.php";
+require __DIR__."/../Partials/sidebar.php";
 
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Фильм</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    table {
-      border-collapse: collapse;
-      width: 600px;
-    }
-    td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      vertical-align: top;
-    }
-    .poster {
-      width: 200px;
-    }
-    .poster img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .title {
-      font-size: 20px;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
+?>
 
 <table>
 
@@ -39,9 +10,12 @@
 foreach($films as $film){
 ?>
   <tr>
-    <td class="poster" rowspan="9">
-      <?php $img =  scandir(__dir__."../../../storage/miniature/".$film['id'])["2"]?>
-      <img src="http://localhost/storage/miniature/<?=$film['id']."/".$img ?>" alt="Постер">
+    <td  rowspan="8" style="
+      
+    ">
+    <div style = "background-image: url(http://localhost/storage/miniature/<?=$film['id']."/".scandir(__dir__."../../../storage/miniature/".$film['id'])["2"] ?>);" class="poster">
+
+    </div>
     </td>
     
     <td class="title"><?=$film['name']?></td>
@@ -62,7 +36,7 @@ foreach($films as $film){
     <td><strong>В актерах:</strong> в актерах</td>
   </tr>
   <tr>
-    <td><strong>есть ли фильм на сайте:</strong> <?php echo (bool)$film['name']? "есть на сайте" : "пока только трейлер"?> </td>
+    <td><strong>есть ли фильм на сайте:</strong> <?php echo (bool)$film['in_stock']? "есть на сайте" : "пока только трейлер"?> </td>
   </tr>
   <tr>
     <td><strong>Описание:</strong><br>
@@ -71,9 +45,13 @@ foreach($films as $film){
   </tr>
   <tr>
     <td>
-      <a>изменить<a>
-      <a>удалить<a>
-      <a>подробнее<a>
+      <form action="http://localhost/admin/film/<?= $film['id'] ?>" method="post">
+        <td>
+          <button type="submit" name="action" value="delete" onclick="return confirm('Удалить фильм?')">
+            Удалить
+          </button>
+        </td>
+    </form>
     </td>
   </tr>
 
@@ -84,5 +62,7 @@ foreach($films as $film){
 ?>
 </table>
 
-</body>
-</html>
+<?php
+require __DIR__."/../Partials/footer.php";
+?>
+
