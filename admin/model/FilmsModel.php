@@ -1,6 +1,8 @@
 <?php
 namespace Admin\Model;
 use Repository\FilmsRepository;
+use Repository\FilmPersonsRepository;
+use Repository\FilmPropertyRepository;
 use Core\Response;
 use Core\Storage;
 class FilmsModel {
@@ -14,8 +16,8 @@ class FilmsModel {
   }
 
   public static function add(array $props, array $poster, array $trailer, array $film): array {
-    FilmPersonsRepository::addConnects($props[""]);
     $filmId = FilmsRepository::addFilm($props);
+
     $filmRes = self::addFilm($film, (string)$filmId);
     if ($filmRes['status'] !== 'success') return $filmRes;
     $trailerRes = self::addTrailer($trailer, (string)$filmId);
@@ -42,7 +44,6 @@ class FilmsModel {
     if ($result["status"] === "error") return Response::array("error", $result);
     return Response::array("success", "Miniature uploaded", Storage::$miniatureDir);
   }
-
 
   public static function deleteMiniature(string $id): array {
     return Storage::deleteDir(Storage::$miniatureDir . $id);
@@ -77,6 +78,8 @@ class FilmsModel {
   
   public static function delete($id): array {
     $id = $id["id"];
+    // print_r(__CLASS__);
+    FilmPropertyRepository::untugFromFilmId($id);
     FilmsRepository::destroy((string)$id);
     self::deleteMiniature($id);
     self::deleteFilm($id);

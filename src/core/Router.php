@@ -1,9 +1,10 @@
 <?php
 namespace Core;
 require __DIR__. "/../../vendor/autoload.php";
-use Admin\Controller;               
+use Admin\Controller;
 use Core\Request;
 use ReflectionMethod;
+
 class Router
 {
   protected static array $routes = [];
@@ -12,26 +13,20 @@ class Router
   protected string $httpMethod;
 
   public static function match(string $uri, string $method) {
-    $uri = trim($uri, '/');
-    
+    $uri = trim($uri, '/'); 
     if ($method === 'POST' && isset($_POST['method']))
       $method = strtoupper($_POST['method']);
     foreach (self::$routes as $route) {
-      if ($route['method'] !== strtoupper($method))
-        continue;
-      
+      if ($route['method'] !== strtoupper($method))  continue;
+
       $pattern = '#^' . $route['uri'] . '$#';
-      // print_r($route);
       if (preg_match($pattern, $uri, $matc)){
-        
         $params = array_filter($matc, 'is_string', ARRAY_FILTER_USE_KEY);
-        
         $params = array_map(function ($v) {
           return ctype_digit($v) ? (int)$v : $v;
         }, $params);
-        $request = new Request($_POST, $params);
-        $file = 'data.txt';
-        file_put_contents($file, (serialize($_POST)??"null")."\n", FILE_APPEND);
+        $sum = [...$_POST,...$_GET];
+        $request = new Request($sum, $params);
         return self::run($route['handler'], $request);
       }
     }
@@ -42,13 +37,10 @@ class Router
 
   public static function run(array $handler, Request $request) {
     [$class, $method] = $handler;
-
     $reflection = new ReflectionMethod($class, $method);
-
     if ($reflection->getNumberOfParameters() > 0) {
       return $class::$method($request);
     }
-
     return $class::$method();
   }
 

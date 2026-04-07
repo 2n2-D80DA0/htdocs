@@ -1,9 +1,5 @@
 <?php
-session_start();
 
-
-
-require __DIR__. "/../vendor/autoload.php";
 use Core\Router;
 use Admin\Controller\FilmsController;
 use Admin\Controller\PropertiesController;
@@ -19,7 +15,7 @@ use Admin\Controller\GenreController;
 use Admin\Controller\LanguageController;
 
 Router::get("/404", 	[PagesController::class,"error404"]);
-// echo"pre";
+
 Router::get(
     "admin/home",
     [AdminController::class,"index"]
@@ -348,17 +344,6 @@ Router::delete(
     "admin/users/(?<id>[0-9]+)", 
     [RatingController::class,"desreoy"]
 );  // удаления рейтинга
-
-    
-if($_SERVER['REQUEST_METHOD'] === "GET"){
-    Router::match($_SERVER['REDIRECT_URL'],"GET");
-}else {
-    $file = 'data.txt';
-    file_put_contents($file,"files" . serialize($_FILES)."\n", FILE_APPEND);
-    file_put_contents($file,"post" . serialize($_POST)."\n", FILE_APPEND);
-    Router::match($_SERVER['REDIRECT_URL'], $_POST["action"]);
-}
-
 
 
 

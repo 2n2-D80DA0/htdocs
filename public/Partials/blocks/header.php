@@ -1,13 +1,31 @@
-
+<?php 
+require __DIR__."/../../../vendor/autoload.php";
+use Core\Storage;
+use Core\Session;
+?>
+<?php $a = "http://localhost/"?>
   <div id="header">
-    <h1 id="logo"><a href="#">MovieHunter</a></h1>
+
+    <h1 id="logo"><a href="/home">MovieHunter</a></h1>
     <div class="social"> <span>FOLLOW US ON:</span>
+    
+
       <ul>
         <li><a class="twitter" href="#">twitter</a></li>
         <li><a class="facebook" href="#">facebook</a></li>
         <li><a class="vimeo" href="#">vimeo</a></li>
         <li><a class="rss" href="#">rss</a></li>
       </ul>
+        <?php
+          echo (!Session::isConnect() ? 
+            "<a href=\"". $a ."login\">LOGIN</a>
+            <a href=\"". $a ."register\">REGISTER</a>"
+          :
+            "<a href=\"" . $a . "logout\">logout</a>"
+          );
+        ?>
+
+        
     </div>
     <div id="navigation">
       <ul>
@@ -17,7 +35,7 @@
         <li><a href="#">COMING SOON</a></li>
         <li><a href="#">CONTACT</a></li>
         <li><a href="#">ADVERTISE</a></li>
-        <li><a href="#">LOGIN</a></li>
+
       </ul>
     </div>
     <div id="sub-navigation">
@@ -30,7 +48,7 @@
       <div id="search">
         <form action="#" method="get" accept-charset="utf-8">
           <label for="search-field">SEARCH</label>
-          <input type="text" name="search field" value="Enter search here" id="search-field" class="blink search-field"  />
+          <input type="text" name="search field" placeholder="Enter search here" id="search-field" class="blink search-field"  />
           <input type="submit" value="GO!" class="search-button" />
         </form>
       </div>

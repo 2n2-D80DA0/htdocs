@@ -8,6 +8,7 @@
 
 namespace Admin\Controller;
 use Admin\Model\FilmsModel;
+use Repository\FilmPropertyRepository;
 use Admin\Model\LanguageModel;
 use Admin\Model\GenreModel;
 use Core\Response;
@@ -42,9 +43,11 @@ class FilmsController{
 	} 
 
 	public static function addFilm (Request $request) : void {
-		print_r($request->quest());
-		
+		// print_r($request->quest());
+
 		$result = FilmsModel::add($request->quest(),$_FILES['poster'],$_FILES['movie'],$_FILES['trailer']);
+		$prop_ids = json_decode($request->quest("postArray"),true);
+		FilmPropertyRepository::tugArr($result["data"],"5",$prop_ids);
 		Response::jsonResponse($result);
 	}
 

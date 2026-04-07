@@ -1,12 +1,14 @@
 {
-    "autoload": {
-        "psr-4": {
-            "Admin\\Controller\\": "Admin/Controller/",
-            "Admin\\Model\\": "Admin/Model/",
-            "Admin\\View\\": "Admin/View/",
-            "Repository\\": "src/Repository/",
-            "Core\\": "src/Core/",
-            "Libs\\":"src/Libs/"
-        }
+  "autoload": {
+    "psr-4": {
+      "Admin\\Controller\\": "Admin/Controller/",
+      "Admin\\Model\\": "Admin/Model/",
+      "Admin\\View\\": "Admin/View/",
+      "User\\Controller\\": "Public/Controller/",
+      "User\\Model\\": "Public/Model/",
+      "User\\View\\": "Public/View/",
+      "Repository\\": "src/Repository/",
+      "Core\\": "src/Core/"
     }
+  }
 }

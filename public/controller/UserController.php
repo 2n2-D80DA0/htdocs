@@ -1,32 +1,64 @@
 <?php
 
-namespace admin\Controller;
+namespace User\Controller;
+use Core\Response;
+use Core\Request;
+use Core\Auth;
+use Core\Session;
+
 
 class UserController{
-	public static function banUser(){
 
+	static public function register(Request $request) {
+		$data = [
+			"password" => $request->quest("password"),
+			"email" => $request->quest("email"),
+			"login" => $request->quest("nick"),
+			"first_name" => $request->quest("name"),
+			"last_name" => $request->quest("lastname"),
+			"passwordConfirm" => $request->quest("passwordConfirm")
+		];
+		$Auth = new Auth();
+		$result = $Auth->register($data,$_FILES["avatar"]);
+		if($result['status'] === "success")
+			Session::login($result);
+		Response::jsonResponse($result);
 	}
-	public static function unbanUser(){
 
+	static public function login (Request $request) {
+		$data = [
+			"password" => $request->quest("password"),
+			"email" => $request->quest("email")
+		];
+		$Auth = new Auth();
+		$result = $Auth->login($data);
+		if($result['status'] === "success")
+			Session::login($result);
+		Response::jsonResponse($result);
 	}
-	public static function editUser(){
 
+	static public function loginPage () {
+		require __DIR__."/../View/login.php";
 	}
-	public static function editUserName(){
 
+	static public function registerPage () {
+		require __DIR__."/../View/register.php";
 	}
-	public static function editUserLogin(){
 
+	static public function logout () {
+		Session::logout();
+		// echo PROJ_DIR."home";
+		header("Location:".BASE_URL."/home");
 	}
-	public static function editUserPassword(){
 
+	static public function setRating (Request $request){
+		
 	}
-	public static function editUserEmail(){
-
+	static public function deleteRating (Request $request){
+		
 	}
-	public static function UpgradeUserRole(){
- 
-	}
+	
+	
 	
 }
 

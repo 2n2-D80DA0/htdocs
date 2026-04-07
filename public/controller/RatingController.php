@@ -3,7 +3,7 @@
 namespace admin\Controller;
 
 class RatingController{
-    
+  
 }
 
 ?>

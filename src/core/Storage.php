@@ -1,11 +1,15 @@
 <?php
+
 namespace Core;
+// require __DIR__."/../../globs.php";
 use Core\Response;
+use Core\Validator;
 class Storage{
   public static string $filmsDir = __DIR__ . '/../../storage/films/';
   public static string $trailersDir = __DIR__ . '/../../storage/trailers/';
   public static string $miniatureDir = __DIR__ . '/../../storage/miniature/';
   public static string $personsPhotoDir = __DIR__ . '/../../storage/personsPhotoDir/';
+  public static string $usersPhotoDir = __DIR__ . '/../../storage/usersPhoto/';
 
   public static array $allowed = [
     'video' => ['mp4','mkv','avi'],
@@ -34,5 +38,20 @@ class Storage{
     }
     if (!rmdir($dir)) return Response::array("error", "delate error", $dir);
     return Response::array("success", "delated successfully", $dir);
+  }
+  public static function getPoster ($id):string {
+    return POSTERS_URL."$id/".scandir(__dir__."/../../storage/miniature/".$id)["2"];
+  }
+  public static function getFilm ($id):string {
+    return FILMS_URL."$id/".scandir(__dir__."/../../storage/films/".$id)["2"];
+  }
+  public static function getTrailers ($id):string {
+    return TRAILERS_URL."$id/".scandir(__dir__."/../../storage/trailers/".$id)["2"];
+  }
+  public static function getAvatar ($id):string {
+    return USERS_PROFIL_URL."$id/".scandir(__dir__."/../../storage/usersPhoto/".$id)["2"];
+  }
+  public static function getPerson ($id):string {
+    return PERSONS_PROFIL_URL."$id/".scandir(__dir__."/../../storage/personsPhotoDir/".$id)["2"];
   }
 }

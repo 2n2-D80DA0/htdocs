@@ -39,6 +39,7 @@ class FilmsRepository{
 		return($film);
 	}
 
+
 	public static function getFilm(int $id) {
 		$pdo = Conect::pdo();
 		$stmt = $pdo->prepare("SELECT * FROM films WHERE id = :id");
@@ -49,8 +50,14 @@ class FilmsRepository{
 		return $film;
 	}
 
-	public function actionDetail($filmId) : void {
-		
+	public static function destroy(string $filmId) : string {
+		$pdo = Conect::pdo();
+		$stmt = $pdo->prepare("DELETE FROM films WHERE id = :id");
+		$stmt->execute([
+			':id' => $filmId
+		]);
+		$stmt->fetch();
+		return "ok";
 	}
 // SELECT * FROM films LIMIT 20 OFFSET 0;
 // INSERT INTO `films` (`id`, `name`, `rating`, `film_release`, `in_stock`, `lor`, `sum_rating`, `rating_count`) VALUES (NULL, 'кино', '0', '', '1', 'TEST', '0', '0');
