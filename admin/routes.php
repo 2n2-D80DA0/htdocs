@@ -131,12 +131,12 @@ Router::get(
 );  // все фильмы про конкретный жанр
 
 Router::get(
-    "admin/language/(?<id>[0-9]+)/films", 		
+    "admin/language/(?<language_id>[0-9]+)/films", 		
     [FilmPropertiesController::class,"filmsWithlanguage"]
 );  // все фильмы с конкретным языком
 
 Router::post(
-    "admin/film/(?<id>[0-9]+)/language/(?<id>[0-9]+)", 		
+    "admin/film/(?<film_id>[0-9]+)/language/(?<language_id>[0-9]+)", 		
     [FilmPropertiesController::class,"linkLang"]
 );  // связать язык к фильму
 

@@ -46,11 +46,20 @@ use Core\Session;
         <li><a href="#">MOST COMMENTED</a></li>
       </ul>
       <div id="search">
-        <form action="#" method="get" accept-charset="utf-8">
-          <label for="search-field">SEARCH</label>
-          <input type="text" name="search field" placeholder="Enter search here" id="search-field" class="blink search-field"  />
-          <input type="submit" value="GO!" class="search-button" />
+        <form id="search-form">
+          <input type="text" id="search-field" placeholder="Enter search">
+          <button type="submit">GO</button>
         </form>
+        <script>
+        document.getElementById('search-form').addEventListener('submit', function(e) {
+          e.preventDefault();
+
+          let value = document.getElementById('search-field').value.trim();
+          if (!value) return;
+          window.location.href = '/search/' + encodeURIComponent(value);
+        });
+
+        </script>
       </div>
     </div>
   </div>

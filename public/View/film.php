@@ -90,7 +90,7 @@
         <div class="genres">
           <strong>Жанры:</strong><br>
           <?php foreach ($genres as $genre): ?>
-            <span><?= ($genre['name']) ?></span>
+            <a href="/genre/<?= ($genre['id']) ?>"><?= ($genre['name']) ?></a>
           <?php endforeach; ?>
         </div>
     </div>
@@ -103,14 +103,14 @@
     </video>
   </div>
 
-  <form action = "/comment" style = "margin-top:10px;" action="post">
-    <input name="action" value="put" type="hidden">
-    <textarea name="comment" required placeholder="Ваш комментарий"></textarea><br><br>
-    <button type="submit" name="add_comment">Отправить</button>
+  <form id = "comment" action = "/comment/<?=$film["id"]?>" method="POST" style = "margin-top:10px;">
+    <input name="method" value="add" type="hidden">
+    <textarea class = "clear" name="comment" required placeholder="Ваш комментарий"></textarea><br><br>
+    <button type="submit">Отправить</button>
   </form>
 
-  <form action = "/rating" method="POST">
-    <input name="action" value="put" type="hidden">
+  <form id = "rating"  action = "/rating/<?=$film["id"]?>" method="POST">
+    <input name="method" value="add" type="hidden">
     <select name="rating" required>
         <option value="">выберите оценку</option>
         <option value="1">1</option>
@@ -120,7 +120,7 @@
         <option value="5">5</option>
     </select>
 
-    <button type="submit" name="add_rating">Оценить</button>
+    <button type="submit">Оценить</button>
   </form>
 
   <div class="comments">
@@ -143,6 +143,54 @@
       <?php } ?>
     <?php } ?>
   </div>
+
+  <script>
+    const form = document.getElementById('comment');
+    const form2 = document.getElementById('rating');
+    const forms = document.getElementsByTagName('form');
+            
+    // console.log();
+    // getElementsByClassName('clear')[0].value = "g";
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+
+      const response = await fetch("http://localhost/comment/<?=$film["id"]?>", {method:"POST", body:formData});
+      const text = await response.text();
+      const parsed = JSON.parse(text);
+        
+      [...form.getElementsByClassName('clear')].forEach((el)=>{
+        el.value = "";
+      });
+
+      if(parsed.status === "error"){
+        alert(parsed.msg);
+      }
+
+    });
+
+    form2.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(form2);
+      const response = await fetch("/rating/<?=$film["id"]?>", {method:"POST", body:formData});
+      const text = await response.text();
+      const parsed = JSON.parse(text);
+
+      [...form.getElementsByClassName('clear')].forEach((el)=>{
+        el.value = "";
+      });
+
+      if(parsed.status === "error"){
+        alert(parsed.msg);
+      }
+
+    });
+
+
+    
+
+
+  </script>
   
 
     

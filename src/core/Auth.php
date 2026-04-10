@@ -25,7 +25,6 @@ class Auth{
     $lastName = $data['last_name'] ?? '';
     $age = (int)($data['age'] ?? 0);
     // Валидация
-    var_dump($data);
     //проверка пароля 
     if ($passwordConfirm !== $password)
       return Response::array("error", "Passwords dont c");
@@ -43,6 +42,7 @@ class Auth{
 
     if (!Validator::validateName($lastName))
       return Response::array("error", "Invalid last name");
+
 
     // проверка пароля
     if (!Validator::validatePassword($password))

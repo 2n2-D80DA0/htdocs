@@ -39,7 +39,15 @@ class FilmsController{
     require __DIR__."/../View/film.php";
   }
   public static function films (Request $request) : void {
-    // require __DIR__."/../View/film.php";
+  }
+
+
+  public static function now (Request $request) {
+    $page = $request->quest("page")?:1;
+    $count = FilmsModel::filmCount("films")["count"];
+    $limit = 1000;
+    $films = FilmsModel::getStackFromNow(((int)$page % (int)$count) - 1,$limit);
+    include (__DIR__."/../View/search.php");
   }
 }
 

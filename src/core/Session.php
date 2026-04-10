@@ -24,9 +24,9 @@ class Session{
     $_SESSION[$key] = $value;
   }
 
-  public static function get(string $key){
+  public static function get(){
     self::start();
-    return $_SESSION[$key] ?? null;
+    return $_SESSION;
   }
 
   public static function remove(string $key): void{

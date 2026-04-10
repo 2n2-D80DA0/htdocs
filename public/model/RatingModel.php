@@ -57,28 +57,31 @@ class RatingModel {
     return $result ?: null;
   }
 
-  public static function setRating(int $user_id, int $movie_id, int $rating): bool {
+  public static function setRating(int $user_id, int $movie_id, int $rating): array {
+    if($rating>5 || $rating<1) return Response::array('error','ты че сума сошел ',5);
+
     $pdo = Conect::pdo();
     $pdo->beginTransaction();
     try {
       $old = self::getRatingByUserAndMovie($user_id, $movie_id);
+      
       if ($old) {
-        
         $stmt = $pdo->prepare("DELETE FROM ratings WHERE id = :id");
         $stmt->execute([":id" => $old['id']]);
-
         $stmt = $pdo->prepare("
-          UPDATE films 
-          SET sum_rating = sum_rating - :old_rating, 
-              rating_count = rating_count - 1, 
-              rating = CASE WHEN rating_count - 1 = 0 THEN 0 ELSE (sum_rating - :old_rating)/(rating_count - 1) END
-          WHERE id = :movie_id
-          ");
+          UPDATE films
+          SET 
+          sum_rating = sum_rating - :old_rating1,
+          rating_count = rating_count - 1,
+          rating = sum_rating/rating_count
+        ");
+          
         $stmt->execute([
-          ':old_rating'=>$old['rating'],
+          ':old_rating1' => $old['rating'],
           ':movie_id'=> $movie_id
         ]);
       }
+      
       $stmt = $pdo->prepare("
         INSERT INTO ratings (user_id, movie_id, rating) 
         VALUES (:user_id, :movie_id, :rating)
@@ -105,11 +108,10 @@ class RatingModel {
       ]);
 
       $pdo->commit();
-      return true;
+      return Response::array('success','рейтинг добавлен',0);
     } catch (\Exception $e) {
       $pdo->rollBack();
-      // не использую thrwo тут вопрос есть 
-      return false;
+      return Response::array('error','ошибка db',6);
     }
   }
 

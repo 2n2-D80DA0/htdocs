@@ -27,7 +27,7 @@ require __DIR__."/../Partials/sidebar.php";
       <input type="text" name="wiki" required>
     </label>
 
-    <input  name="action"  type="hidden" value="add">
+    <input  name="method"  type="hidden" value="add">
 
     <label>фото
       <input type="file" name="image" accept="image/*" class="file-input" required>

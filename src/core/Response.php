@@ -35,6 +35,7 @@ class Response {
     header('Content-Type: application/json');
     http_response_code($result['status'] === 'error' ? 400 : 200);
     echo json_encode($result);
+    exit();
   }
 }
 

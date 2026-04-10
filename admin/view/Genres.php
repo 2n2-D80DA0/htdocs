@@ -40,10 +40,10 @@ require __DIR__."/../Partials/sidebar.php";
                 </td>
 
                 <td>
-                    <button type="submit" name="action" value="patch">
+                    <button type="submit" name="method" value="patch">
                         Сохранить
                     </button>
-                    <button type="submit" name="action" value="delete"
+                    <button type="submit" name="method" value="delete"
                             onclick="return confirm('Удалить?')">
                         Удалить
                     </button>

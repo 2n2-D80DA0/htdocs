@@ -10,11 +10,19 @@
 use Core\Router;
 use User\Controller\FilmsController;
 use User\Controller\UserController;
+use User\Controller\CommentController;
+use User\Controller\RatingController;
+use User\Controller\SearchController;
+use User\Controller\GenreController;
 // use "User\Controller\FilmPropertiesController";
 // use "User\Controller\PersonsController";
 // use "User\Controller\CommentController";
 // use "User\Controller\RatingController";
 
+Router::get(
+  "", 
+  [FilmsController::class,"index"]
+);	//страница фильмов
 
 Router::get(
   "home", 
@@ -55,18 +63,79 @@ Router::get(
   [UserController::class,"logout"]
 );
 
-
-
-
-
 Router::put(
-  "comment",
-  [UserController::class,"comment"]
+  "comment/(?<film_id>[0-9]+)",
+  [CommentController::class,"addComment"]
 );
+// echo(CommentController::addComment(1));
 Router::put(
-  "rating",
-  [UserController::class,"rating"]
+  "rating/(?<film_id>[0-9]+)",
+  [RatingController::class,"addRating"]
 );
+
+
+
+
+
+Router::get(
+  "search/(?<param>[a-zA-Zа-яА-ЯёЁ]+)/(?<page>[0-9]+)",
+  [SearchController::class,"index"]
+);
+Router::get(
+  "search/(?<param>[a-zA-Zа-яА-ЯёЁ]+)",
+  [SearchController::class,"index"]
+);
+
+
+Router::get(
+  "topComments/(?<page>[0-9]+)",
+  [CommentController::class,"Comments"]
+);
+Router::get(
+  "topComments",
+  [CommentController::class,"Comments"]
+);
+
+
+Router::get(
+  "topRating/(?<page>[0-9]+)",
+  [RatingController::class,"index"]
+);
+Router::get(
+  "topRating",
+  [RatingController::class,"index"]
+);
+
+
+Router::get(
+  "now/(?<page>[0-9]+)",
+  [FilmsController::class,"now"]
+);
+Router::get(
+  "now",
+  [FilmsController::class,"now"]
+);
+
+
+
+
+Router::get(
+  "genre/(?<genre_id>[0-9]+)/(?<page>[0-9]+)",
+  [GenreController::class,"index"]
+);
+Router::get(
+  "genre/(?<genre_id>[0-9]+)",
+  [GenreController::class,"index"]
+);
+
+
+
+
+Router::get(
+  "person/(?<genre_id>[0-9]+)",
+  [GenreController::class,"index"]
+);
+
 
 
 // //  ██████╗ ██████╗  ██████╗ ██████╗ ███████╗██████╗ ████████╗██╗   ██╗

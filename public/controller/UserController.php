@@ -21,7 +21,7 @@ class UserController{
 		$Auth = new Auth();
 		$result = $Auth->register($data,$_FILES["avatar"]);
 		if($result['status'] === "success")
-			Session::login($result);
+			Session::login($result["data"]);
 		Response::jsonResponse($result);
 	}
 
@@ -33,7 +33,7 @@ class UserController{
 		$Auth = new Auth();
 		$result = $Auth->login($data);
 		if($result['status'] === "success")
-			Session::login($result);
+			Session::login($result["data"]);
 		Response::jsonResponse($result);
 	}
 

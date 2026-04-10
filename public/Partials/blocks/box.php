@@ -1,7 +1,7 @@
   <div class="box">
     <div class="head">
       <h2><?php echo $boxHeader?></h2>
-      <p class="text-right"><a href="films/<?php echo $boxHeader?>">See all</a></p>
+      <p class="text-right"><a href="<?php echo $boxHeader?>">See all</a></p>
     </div>
     <?php
       foreach($items as $item){

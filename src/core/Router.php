@@ -13,13 +13,17 @@ class Router
   protected string $httpMethod;
 
   public static function match(string $uri, string $method) {
+    // echo $uri;
     $uri = trim($uri, '/'); 
     if ($method === 'POST' && isset($_POST['method']))
       $method = strtoupper($_POST['method']);
     foreach (self::$routes as $route) {
       if ($route['method'] !== strtoupper($method))  continue;
 
-      $pattern = '#^' . $route['uri'] . '$#';
+      $pattern = '#^' . $route['uri'] . '$#u';
+      // echo "<pre>";
+      // var_dump($pattern,$uri,preg_match($pattern, $uri, $matc));
+
       if (preg_match($pattern, $uri, $matc)){
         $params = array_filter($matc, 'is_string', ARRAY_FILTER_USE_KEY);
         $params = array_map(function ($v) {
@@ -29,6 +33,9 @@ class Router
         $request = new Request($sum, $params);
         return self::run($route['handler'], $request);
       }
+
+        
+
     }
   
     http_response_code(404);

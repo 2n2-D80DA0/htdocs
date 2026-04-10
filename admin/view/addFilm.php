@@ -38,7 +38,7 @@ require __DIR__."/../Partials/sidebar.php";
       <div class="selected-genres">
       </div>
     </div>
-    <input type="hidden" name="action" value="add" >
+    <input type="hidden" name="method" value="add" >
 
     <label>Постер:
       <input type="file" name="poster" accept="image/*" class="file-input" required>

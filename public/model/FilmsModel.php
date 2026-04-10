@@ -6,6 +6,15 @@ use PDO;
 
 
 class FilmsModel {
+  public static function filmCount (){
+    $pdo = Conect::pdo();
+    $stmt = $pdo->prepare("
+      SELECT count(*) as count
+      FROM films
+    ");
+    $stmt->execute();
+    return $stmt->fetch();
+  }
 
   public static function getStackFromNow(int $offset = 0,int $limit = 6): array {
     $pdo = Conect::pdo();
@@ -31,6 +40,7 @@ class FilmsModel {
     $arr = $stmt->fetchAll(PDO::FETCH_ASSOC);
     return $arr;
   }
+
   public static function getStackFromComments(int $offset = 0,int $limit = 6): array {
     $pdo = Conect::pdo();
     $stmt = $pdo->prepare("
@@ -50,11 +60,11 @@ class FilmsModel {
     ");
     $stmt->execute([
 			':limit' => $limit,
-			':offset' => $offset
+			':offset' => $offset * $limit
 		]); 
-    $arr = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    return $arr;
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
+
   public static function getStackFromRating(int $offset = 0,int $limit = 6): array {
     $pdo = Conect::pdo();
     $stmt = $pdo->prepare("

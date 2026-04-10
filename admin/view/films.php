@@ -47,7 +47,7 @@ foreach($films as $film){
     <td>
       <form action="http://localhost/admin/film/<?= $film['id'] ?>" method="post">
         <td>
-          <button type="submit" name="action" value="delete" onclick="return confirm('Удалить фильм?')">
+          <button type="submit" name="method" value="delete" onclick="return confirm('Удалить фильм?')">
             Удалить
           </button>
         </td>
