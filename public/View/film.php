@@ -68,7 +68,7 @@
   <div style = "
     display: flex;
   ">
-    <img src="<?php echo Storage::getPoster($film["id"])?>" alt="">
+    <img width=300 height=400 src="<?php echo Storage::getPoster($film["id"])?>" alt="">
     <div class="meta">
       
         <strong>Рейтинг:</strong> <?= $film['rating'] ?> <br>
@@ -93,9 +93,34 @@
             <a href="/genre/<?= ($genre['id']) ?>"><?= ($genre['name']) ?></a>
           <?php endforeach; ?>
         </div>
+        <div class="genres">
+          <strong>актеры:</strong><br>
+          <?php foreach ($ACTOR as $genre): ?>
+            <a href="/person/<?= ($genre['id']) ?>"><?= ($genre['name'].$genre['namelast']) ?></a>
+          <?php endforeach; ?>
+        </div>
+        <div class="genres">
+          <strong>продюсеры:</strong><br>
+          <?php foreach ($PRODUCER as $genre): ?>
+            <a href="/person/<?= ($genre['id']) ?>"><?= ($genre['name'].$genre['namelast']) ?></a>
+          <?php endforeach; ?>
+        </div>
+        <div class="genres">
+          <strong>режисеры:</strong><br>
+          <?php foreach ($DIRECTOR as $genre): ?>
+            <a href="/person/<?= ($genre['id']) ?>"><?= ($genre['name'].$genre['namelast']) ?></a>
+          <?php endforeach; ?>
+        </div>
     </div>
   </div>
-  
+  <h3>трейлер</h3>
+  <div>
+    <video width="100%" controls>
+      <source src="<?php echo Storage::getTrailers($film["id"])?>" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+  </div>
+  <h3>фильм</h3>
   <div>
     <video width="100%" controls>
       <source src="<?php echo Storage::getFilm($film["id"])?>" type="video/mp4">

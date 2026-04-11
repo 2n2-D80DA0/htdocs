@@ -78,7 +78,6 @@ class FilmsModel {
   
   public static function delete($id): array {
     $id = $id["id"];
-    // print_r(__CLASS__);
     FilmPropertyRepository::untugFromFilmId($id);
     FilmsRepository::destroy((string)$id);
     self::deleteMiniature($id);

@@ -5,6 +5,7 @@ namespace User\Controller;
 use Core\Response;
 use Core\Request;
 use User\Model\FilmsModel;
+use User\Model\ParticipantsModel;
 use User\Model\GenreModel;
 use User\Model\CommentsModel;
 
@@ -30,12 +31,18 @@ class FilmsController{
     require __DIR__."/../View/home.php";
   }
   public static function watch (Request $request) : void {
-    $film = FilmsModel::getFilm($request->quest("id"));
-    $genres = GenreModel::getAllOnFilm($request->quest("id"));
-    $comments = CommentsModel::getCommentsByFilm($request->quest("id"));
+    $film_id = (int)$request->quest("id");
+    $film = FilmsModel::getFilm($film_id);
+    $genres = GenreModel::getAllOnFilm($film_id);
+    $comments = CommentsModel::getCommentsByFilm($film_id);
 
-
-
+    $ACTOR = ParticipantsModel::getActors($film_id);
+    $PRODUCER = ParticipantsModel::getProducer($film_id);
+    $DIRECTOR = ParticipantsModel::getDirectors($film_id);
+    // echo("<pre>");
+    // print_r($ACTOR);
+    // print_r($PRODUCER);
+    // print_r($DIRECTOR);
     require __DIR__."/../View/film.php";
   }
   public static function films (Request $request) : void {

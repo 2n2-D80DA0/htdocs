@@ -341,3 +341,360 @@ a:7:{s:9:"film_name";s:3:"adf";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d
 filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php3E40.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php3E41.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php3E51.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}}
 posta:7:{s:9:"film_name";s:3:"adf";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:3:"fds";s:12:"release_date";s:10:"2026-04-18";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:65:"["6","5","3","2","1","0","28","29","30","31","32","33","35","37"]";}
 a:7:{s:9:"film_name";s:3:"adf";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:3:"fds";s:12:"release_date";s:10:"2026-04-18";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:65:"["6","5","3","2","1","0","28","29","30","31","32","33","35","37"]";}
+a:0:{}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpCF35.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpCF36.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpCF46.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:3:"123";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:3:"123";s:12:"release_date";s:10:"2026-04-15";s:8:"language";s:1:"1";s:6:"action";s:3:"add";s:9:"postArray";s:33:"["6","8","4","2","1","0","3","5"]";}
+a:7:{s:9:"film_name";s:3:"123";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:3:"123";s:12:"release_date";s:10:"2026-04-15";s:8:"language";s:1:"1";s:6:"action";s:3:"add";s:9:"postArray";s:33:"["6","8","4","2","1","0","3","5"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpD736.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpD737.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpD738.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:3:"123";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:3:"123";s:12:"release_date";s:10:"2026-04-15";s:8:"language";s:1:"1";s:6:"action";s:3:"add";s:9:"postArray";s:33:"["6","8","4","2","1","0","3","5"]";}
+a:7:{s:9:"film_name";s:3:"123";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:3:"123";s:12:"release_date";s:10:"2026-04-15";s:8:"language";s:1:"1";s:6:"action";s:3:"add";s:9:"postArray";s:33:"["6","8","4","2","1","0","3","5"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php95E7.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php95E8.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php95F9.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:3:"123";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:3:"123";s:12:"release_date";s:10:"2026-04-15";s:8:"language";s:1:"1";s:6:"action";s:3:"add";s:9:"postArray";s:33:"["6","8","4","2","1","0","3","5"]";}
+a:7:{s:9:"film_name";s:3:"123";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:3:"123";s:12:"release_date";s:10:"2026-04-15";s:8:"language";s:1:"1";s:6:"action";s:3:"add";s:9:"postArray";s:33:"["6","8","4","2","1","0","3","5"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:23:"C:\xampp\tmp\php6B5.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:23:"C:\xampp\tmp\php6B6.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:23:"C:\xampp\tmp\php6B7.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:3:"123";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:3:"123";s:12:"release_date";s:10:"2026-04-15";s:8:"language";s:1:"1";s:6:"action";s:3:"add";s:9:"postArray";s:33:"["6","8","4","2","1","0","3","5"]";}
+a:7:{s:9:"film_name";s:3:"123";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:3:"123";s:12:"release_date";s:10:"2026-04-15";s:8:"language";s:1:"1";s:6:"action";s:3:"add";s:9:"postArray";s:33:"["6","8","4","2","1","0","3","5"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpD2C3.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpD2C4.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpD2D4.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:3:"123";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:3:"123";s:12:"release_date";s:10:"2026-04-15";s:8:"language";s:1:"1";s:6:"action";s:3:"add";s:9:"postArray";s:33:"["6","8","4","2","1","0","3","5"]";}
+a:7:{s:9:"film_name";s:3:"123";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:3:"123";s:12:"release_date";s:10:"2026-04-15";s:8:"language";s:1:"1";s:6:"action";s:3:"add";s:9:"postArray";s:33:"["6","8","4","2","1","0","3","5"]";}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php8059.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php805A.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php806B.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:8:"12341234";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:8:"12334134";s:12:"release_date";s:10:"2026-04-08";s:8:"language";s:1:"2";s:6:"action";s:3:"add";s:9:"postArray";s:39:"["4","6","3","5","2","1","8","22","20"]";}
+a:7:{s:9:"film_name";s:8:"12341234";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:8:"12334134";s:12:"release_date";s:10:"2026-04-08";s:8:"language";s:1:"2";s:6:"action";s:3:"add";s:9:"postArray";s:39:"["4","6","3","5","2","1","8","22","20"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpCB6F.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpCB70.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpCB71.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:8:"12341234";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:8:"12334134";s:12:"release_date";s:10:"2026-04-08";s:8:"language";s:1:"2";s:6:"action";s:3:"add";s:9:"postArray";s:39:"["4","6","3","5","2","1","8","22","20"]";}
+a:7:{s:9:"film_name";s:8:"12341234";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:8:"12334134";s:12:"release_date";s:10:"2026-04-08";s:8:"language";s:1:"2";s:6:"action";s:3:"add";s:9:"postArray";s:39:"["4","6","3","5","2","1","8","22","20"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:23:"C:\xampp\tmp\php3D9.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:23:"C:\xampp\tmp\php3DA.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:23:"C:\xampp\tmp\php3EB.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:8:"12341234";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:8:"12334134";s:12:"release_date";s:10:"2026-04-08";s:8:"language";s:1:"2";s:6:"action";s:3:"add";s:9:"postArray";s:39:"["4","6","3","5","2","1","8","22","20"]";}
+a:7:{s:9:"film_name";s:8:"12341234";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:8:"12334134";s:12:"release_date";s:10:"2026-04-08";s:8:"language";s:1:"2";s:6:"action";s:3:"add";s:9:"postArray";s:39:"["4","6","3","5","2","1","8","22","20"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpFF76.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpFF77.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpFF78.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:8:"12341234";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:8:"12334134";s:12:"release_date";s:10:"2026-04-08";s:8:"language";s:1:"2";s:6:"action";s:3:"add";s:9:"postArray";s:39:"["4","6","3","5","2","1","8","22","20"]";}
+a:7:{s:9:"film_name";s:8:"12341234";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:8:"12334134";s:12:"release_date";s:10:"2026-04-08";s:8:"language";s:1:"2";s:6:"action";s:3:"add";s:9:"postArray";s:39:"["4","6","3","5","2","1","8","22","20"]";}
+a:0:{}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpE4B8.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpE4B9.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpE4BA.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF1BB.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF1BC.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF1BD.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php235E.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php235F.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php2360.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpA4A6.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpA4A7.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpA4A8.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF8B5.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF8B6.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF8B7.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php8D18.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php8D19.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php8D2A.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php3515.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php3516.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php3517.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php5EC8.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php5EC9.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php5ECA.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php3B11.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php3B12.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php3B13.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF6ED.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF6EE.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF6EF.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpCCC0.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpCCC1.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpCCC2.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php9365.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php9366.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php9367.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpDB55.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpDB56.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpDB57.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php1EBB.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php1EBC.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php1EBD.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpA2C5.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpA2C6.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpA2C7.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:7:{s:9:"film_name";s:6:"dfgdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:6:"fgddfg";s:12:"release_date";s:10:"2026-04-21";s:8:"language";s:1:"3";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["5","3","2","0","1","4","6"]";}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+filesa:1:{s:5:"image";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php59F2.tmp";s:5:"error";i:0;s:4:"size";i:16555;}}
+posta:6:{s:4:"name";s:7:"asdfasf";s:8:"namelast";s:6:"asfasf";s:4:"born";s:10:"2026-04-03";s:6:"gender";s:1:"0";s:4:"wiki";s:23:"adgasdgasdgasdgasdgadsg";s:6:"action";s:3:"add";}
+a:6:{s:4:"name";s:7:"asdfasf";s:8:"namelast";s:6:"asfasf";s:4:"born";s:10:"2026-04-03";s:6:"gender";s:1:"0";s:4:"wiki";s:23:"adgasdgasdgasdgasdgadsg";s:6:"action";s:3:"add";}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpC77F.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpC780.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpC781.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:10:"gadfsgsdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:9:"gsdfgsdfg";s:12:"release_date";s:10:"2026-04-08";s:8:"language";s:1:"8";s:6:"action";s:3:"add";s:9:"postArray";s:2:"{}";}
+a:7:{s:9:"film_name";s:10:"gadfsgsdfg";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:9:"gsdfgsdfg";s:12:"release_date";s:10:"2026-04-08";s:8:"language";s:1:"8";s:6:"action";s:3:"add";s:9:"postArray";s:2:"{}";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:11:"fawicon.jpg";s:9:"full_path";s:11:"fawicon.jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php18E9.tmp";s:5:"error";i:0;s:4:"size";i:20052;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php18FA.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php18FB.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:8:"ggaddsag";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:11:"asdggsdagsd";s:12:"release_date";s:10:"2026-04-22";s:8:"language";s:1:"5";s:6:"action";s:3:"add";s:9:"postArray";s:25:"["0","1","2","3","6","7"]";}
+a:7:{s:9:"film_name";s:8:"ggaddsag";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:11:"asdggsdagsd";s:12:"release_date";s:10:"2026-04-22";s:8:"language";s:1:"5";s:6:"action";s:3:"add";s:9:"postArray";s:25:"["0","1","2","3","6","7"]";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:11:"fawicon.jpg";s:9:"full_path";s:11:"fawicon.jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpB80A.tmp";s:5:"error";i:0;s:4:"size";i:20052;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpB80B.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpB81C.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:8:"ggaddsag";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:11:"asdggsdagsd";s:12:"release_date";s:10:"2026-04-22";s:8:"language";s:1:"5";s:6:"action";s:3:"add";s:9:"postArray";s:25:"["0","1","2","3","6","7"]";}
+a:7:{s:9:"film_name";s:8:"ggaddsag";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:11:"asdggsdagsd";s:12:"release_date";s:10:"2026-04-22";s:8:"language";s:1:"5";s:6:"action";s:3:"add";s:9:"postArray";s:25:"["0","1","2","3","6","7"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:11:"fawicon.jpg";s:9:"full_path";s:11:"fawicon.jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpBA30.tmp";s:5:"error";i:0;s:4:"size";i:20052;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpBA31.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpBA32.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:8:"ggaddsag";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:11:"asdggsdagsd";s:12:"release_date";s:10:"2026-04-22";s:8:"language";s:1:"5";s:6:"action";s:3:"add";s:9:"postArray";s:25:"["0","1","2","3","6","7"]";}
+a:7:{s:9:"film_name";s:8:"ggaddsag";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:11:"asdggsdagsd";s:12:"release_date";s:10:"2026-04-22";s:8:"language";s:1:"5";s:6:"action";s:3:"add";s:9:"postArray";s:25:"["0","1","2","3","6","7"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:11:"fawicon.jpg";s:9:"full_path";s:11:"fawicon.jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpBC08.tmp";s:5:"error";i:0;s:4:"size";i:20052;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpBC09.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpBC0A.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:8:"ggaddsag";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:11:"asdggsdagsd";s:12:"release_date";s:10:"2026-04-22";s:8:"language";s:1:"5";s:6:"action";s:3:"add";s:9:"postArray";s:25:"["0","1","2","3","6","7"]";}
+a:7:{s:9:"film_name";s:8:"ggaddsag";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:11:"asdggsdagsd";s:12:"release_date";s:10:"2026-04-22";s:8:"language";s:1:"5";s:6:"action";s:3:"add";s:9:"postArray";s:25:"["0","1","2","3","6","7"]";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:11:"fawicon.jpg";s:9:"full_path";s:11:"fawicon.jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF3F2.tmp";s:5:"error";i:0;s:4:"size";i:20052;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF3F3.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF403.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:8:"ggaddsag";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:11:"asdggsdagsd";s:12:"release_date";s:10:"2026-04-22";s:8:"language";s:1:"5";s:6:"action";s:3:"add";s:9:"postArray";s:25:"["0","1","2","3","6","7"]";}
+a:7:{s:9:"film_name";s:8:"ggaddsag";s:6:"sessid";s:32:"b455b9180e89e97152adda38c7746d47";s:3:"lor";s:11:"asdggsdagsd";s:12:"release_date";s:10:"2026-04-22";s:8:"language";s:1:"5";s:6:"action";s:3:"add";s:9:"postArray";s:25:"["0","1","2","3","6","7"]";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+filesa:0:{}
+posta:1:{s:6:"action";s:6:"delete";}
+a:1:{s:6:"action";s:6:"delete";}
+a:0:{}
+a:0:{}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpA864.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpA865.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpA875.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:23:"человек паук";s:6:"sessid";s:0:"";s:3:"lor";s:16:"афыафыыа";s:12:"release_date";s:10:"2026-04-12";s:8:"language";s:1:"8";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["0","1","2","4","6","3","7"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpAFF8.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpAFF9.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpAFFA.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:23:"человек паук";s:6:"sessid";s:0:"";s:3:"lor";s:16:"афыафыыа";s:12:"release_date";s:10:"2026-04-12";s:8:"language";s:1:"8";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["0","1","2","4","6","3","7"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpC151.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpC161.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpC162.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:23:"человек паук";s:6:"sessid";s:0:"";s:3:"lor";s:16:"афыафыыа";s:12:"release_date";s:10:"2026-04-12";s:8:"language";s:1:"8";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["0","1","2","4","6","3","7"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (4).jpg";s:9:"full_path";s:31:"Без названия (4).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpC403.tmp";s:5:"error";i:0;s:4:"size";i:16555;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpC404.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpC405.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:7:{s:9:"film_name";s:23:"человек паук";s:6:"sessid";s:0:"";s:3:"lor";s:16:"афыафыыа";s:12:"release_date";s:10:"2026-04-12";s:8:"language";s:1:"8";s:6:"action";s:3:"add";s:9:"postArray";s:29:"["0","1","2","4","6","3","7"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:11:"movie12.jpg";s:9:"full_path";s:11:"movie12.jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php44FF.tmp";s:5:"error";i:0;s:4:"size";i:20482;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php4500.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php4501.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:10:{s:9:"film_name";s:31:"железный негодяй";s:6:"sessid";s:0:"";s:3:"lor";s:5:"ababa";s:12:"release_date";s:10:"2026-06-03";s:8:"language";s:1:"0";s:6:"method";s:3:"add";s:9:"postArray";s:9:"["0","2"]";s:10:"postArray2";s:9:"["4","1"]";s:10:"postArray3";s:13:"["4","5","2"]";s:10:"postArray4";s:9:"["4","1"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:11:"movie12.jpg";s:9:"full_path";s:11:"movie12.jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php3250.tmp";s:5:"error";i:0;s:4:"size";i:20482;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php3251.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php3252.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:10:{s:9:"film_name";s:31:"железный негодяй";s:6:"sessid";s:0:"";s:3:"lor";s:5:"ababa";s:12:"release_date";s:10:"2026-06-03";s:8:"language";s:1:"0";s:6:"method";s:3:"add";s:9:"postArray";s:9:"["0","2"]";s:10:"postArray2";s:9:"["4","1"]";s:10:"postArray3";s:13:"["4","5","2"]";s:10:"postArray4";s:9:"["4","1"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:11:"movie12.jpg";s:9:"full_path";s:11:"movie12.jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php7473.tmp";s:5:"error";i:0;s:4:"size";i:20482;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php7474.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php7485.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:10:{s:9:"film_name";s:31:"железный негодяй";s:6:"sessid";s:0:"";s:3:"lor";s:5:"ababa";s:12:"release_date";s:10:"2026-06-03";s:8:"language";s:1:"0";s:6:"method";s:3:"add";s:9:"postArray";s:9:"["0","2"]";s:10:"postArray2";s:9:"["4","1"]";s:10:"postArray3";s:13:"["4","5","2"]";s:10:"postArray4";s:9:"["4","1"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:11:"movie12.jpg";s:9:"full_path";s:11:"movie12.jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF122.tmp";s:5:"error";i:0;s:4:"size";i:20482;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF123.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpF124.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:10:{s:9:"film_name";s:31:"железный негодяй";s:6:"sessid";s:0:"";s:3:"lor";s:5:"ababa";s:12:"release_date";s:10:"2026-06-03";s:8:"language";s:1:"0";s:6:"method";s:3:"add";s:9:"postArray";s:17:"["0","2","1","4"]";s:10:"postArray2";s:9:"["4","1"]";s:10:"postArray3";s:13:"["4","5","2"]";s:10:"postArray4";s:21:"["4","1","2","5","3"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:11:"movie12.jpg";s:9:"full_path";s:11:"movie12.jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php4D5F.tmp";s:5:"error";i:0;s:4:"size";i:20482;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php4D60.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php4D70.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:10:{s:9:"film_name";s:31:"железный негодяй";s:6:"sessid";s:0:"";s:3:"lor";s:5:"ababa";s:12:"release_date";s:10:"2026-06-03";s:8:"language";s:1:"0";s:6:"method";s:3:"add";s:9:"postArray";s:17:"["0","2","1","4"]";s:10:"postArray2";s:9:"["4","1"]";s:10:"postArray3";s:13:"["4","5","2"]";s:10:"postArray4";s:21:"["4","1","2","5","3"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:34:"MEGA _ 3d assets - Anna Zimmer.jpg";s:9:"full_path";s:34:"MEGA _ 3d assets - Anna Zimmer.jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php6E72.tmp";s:5:"error";i:0;s:4:"size";i:66515;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-01-30 13-20-01.mp4";s:9:"full_path";s:23:"2026-01-30 13-20-01.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php6E73.tmp";s:5:"error";i:0;s:4:"size";i:948211;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php6E74.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:10:{s:9:"film_name";s:25:"армянский тор";s:6:"sessid";s:0:"";s:3:"lor";s:10:"gdasdgasdg";s:12:"release_date";s:10:"2026-04-05";s:8:"language";s:1:"1";s:6:"method";s:3:"add";s:6:"genres";s:21:"["3","5","6","7","8"]";s:9:"directors";s:13:"["6","3","0"]";s:6:"actors";s:9:"["4","1"]";s:8:"producer";s:13:"["6","5","2"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:34:"MEGA _ 3d assets - Anna Zimmer.jpg";s:9:"full_path";s:34:"MEGA _ 3d assets - Anna Zimmer.jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpBAFE.tmp";s:5:"error";i:0;s:4:"size";i:66515;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-01-30 13-20-01.mp4";s:9:"full_path";s:23:"2026-01-30 13-20-01.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpBAFF.tmp";s:5:"error";i:0;s:4:"size";i:948211;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpBB10.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:10:{s:9:"film_name";s:25:"армянский тор";s:6:"sessid";s:0:"";s:3:"lor";s:10:"gdasdgasdg";s:12:"release_date";s:10:"2026-04-05";s:8:"language";s:1:"1";s:6:"method";s:3:"add";s:6:"genres";s:21:"["3","5","6","7","8"]";s:9:"directors";s:13:"["6","3","0"]";s:6:"actors";s:9:"["4","1"]";s:8:"producer";s:13:"["6","5","2"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:34:"MEGA _ 3d assets - Anna Zimmer.jpg";s:9:"full_path";s:34:"MEGA _ 3d assets - Anna Zimmer.jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php7009.tmp";s:5:"error";i:0;s:4:"size";i:66515;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-01-30 13-20-01.mp4";s:9:"full_path";s:23:"2026-01-30 13-20-01.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php700A.tmp";s:5:"error";i:0;s:4:"size";i:948211;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php700B.tmp";s:5:"error";i:0;s:4:"size";i:339756;}}
+posta:10:{s:9:"film_name";s:25:"армянский тор";s:6:"sessid";s:0:"";s:3:"lor";s:10:"gdasdgasdg";s:12:"release_date";s:10:"2026-04-05";s:8:"language";s:1:"1";s:6:"method";s:3:"add";s:6:"genres";s:21:"["3","5","6","7","8"]";s:9:"directors";s:13:"["6","3","0"]";s:6:"actors";s:9:"["4","1"]";s:8:"producer";s:13:"["6","5","2"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (3).jpg";s:9:"full_path";s:31:"Без названия (3).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\php90C2.tmp";s:5:"error";i:0;s:4:"size";i:33532;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php90C3.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\php90C4.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}}
+posta:10:{s:9:"film_name";s:6:"имя";s:6:"sessid";s:0:"";s:3:"lor";s:23:"человек паук";s:12:"release_date";s:10:"2026-05-03";s:8:"language";s:2:"39";s:6:"method";s:3:"add";s:6:"genres";s:41:"["62","61","60","55","56","59","71","70"]";s:9:"directors";s:16:"["21","20","17"]";s:6:"actors";s:16:"["21","18","19"]";s:8:"producer";s:21:"["20","17","16","19"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (3).jpg";s:9:"full_path";s:31:"Без названия (3).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpACD9.tmp";s:5:"error";i:0;s:4:"size";i:33532;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpACDA.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpACDB.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}}
+posta:10:{s:9:"film_name";s:6:"имя";s:6:"sessid";s:0:"";s:3:"lor";s:23:"человек паук";s:12:"release_date";s:10:"2026-05-03";s:8:"language";s:2:"39";s:6:"method";s:3:"add";s:6:"genres";s:41:"["62","61","60","55","56","59","71","70"]";s:9:"directors";s:16:"["21","20","17"]";s:6:"actors";s:16:"["21","18","19"]";s:8:"producer";s:16:"["20","16","19"]";}
+filesa:3:{s:6:"poster";a:6:{s:4:"name";s:31:"Без названия (3).jpg";s:9:"full_path";s:31:"Без названия (3).jpg";s:4:"type";s:10:"image/jpeg";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpBEFD.tmp";s:5:"error";i:0;s:4:"size";i:33532;}s:5:"movie";a:6:{s:4:"name";s:23:"2026-02-12 00-57-54.mp4";s:9:"full_path";s:23:"2026-02-12 00-57-54.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpBEFE.tmp";s:5:"error";i:0;s:4:"size";i:339756;}s:7:"trailer";a:6:{s:4:"name";s:23:"2026-02-04 16-22-44.mp4";s:9:"full_path";s:23:"2026-02-04 16-22-44.mp4";s:4:"type";s:9:"video/mp4";s:8:"tmp_name";s:24:"C:\xampp\tmp\phpBEFF.tmp";s:5:"error";i:0;s:4:"size";i:2334313;}}
+posta:10:{s:9:"film_name";s:6:"имя";s:6:"sessid";s:0:"";s:3:"lor";s:23:"человек паук";s:12:"release_date";s:10:"2026-05-03";s:8:"language";s:2:"39";s:6:"method";s:3:"add";s:6:"genres";s:41:"["62","61","60","55","56","59","71","70"]";s:9:"directors";s:16:"["17","15","21"]";s:6:"actors";s:16:"["21","18","19"]";s:8:"producer";s:16:"["20","16","19"]";}

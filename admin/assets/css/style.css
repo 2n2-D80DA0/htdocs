@@ -18,12 +18,15 @@
     width: 100%; 
     padding: 5px; 
   }
-  .genres-container { 
+  .genres-container,
+  .actors-container,
+  .directors-container,
+  .producer-container{ 
     display: flex; 
     gap: 20px; 
     margin-top: 10px; 
   }
-  .genres-list, .selected-genres { 
+  .genres-list,.list, .selected-genres,.selected { 
     align-content: flex-start;
     height: fit-content;   
     flex-wrap: wrap; 
@@ -40,7 +43,7 @@
     overflow-y: scroll;
     height: 400px;
   }
-  .genre-item {
+  .genre-item,.itemq {
     max-height: fit-content;
     border: 1px solid red;
     border-radius: 50px;

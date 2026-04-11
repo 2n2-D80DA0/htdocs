@@ -28,7 +28,7 @@ class GenreModel{
 			FROM film_properties  
 			WHERE propertie_id  = 5 and property_type_id = :a
 		");
-				// echo(123);
+		
 		$stmt->execute([
 			':a' => $id
 		]);

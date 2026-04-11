@@ -14,10 +14,7 @@ use User\Controller\CommentController;
 use User\Controller\RatingController;
 use User\Controller\SearchController;
 use User\Controller\GenreController;
-// use "User\Controller\FilmPropertiesController";
-// use "User\Controller\PersonsController";
-// use "User\Controller\CommentController";
-// use "User\Controller\RatingController";
+use User\Controller\PersonsController;
 
 Router::get(
   "", 
@@ -76,7 +73,6 @@ Router::put(
 
 
 
-
 Router::get(
   "search/(?<param>[a-zA-Zа-яА-ЯёЁ]+)/(?<page>[0-9]+)",
   [SearchController::class,"index"]
@@ -85,6 +81,9 @@ Router::get(
   "search/(?<param>[a-zA-Zа-яА-ЯёЁ]+)",
   [SearchController::class,"index"]
 );
+
+
+
 
 
 Router::get(
@@ -132,8 +131,8 @@ Router::get(
 
 
 Router::get(
-  "person/(?<genre_id>[0-9]+)",
-  [GenreController::class,"index"]
+  "person/(?<person_id>[0-9]+)",
+  [PersonsController::class,"index"]
 );
 
 

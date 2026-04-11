@@ -14,7 +14,7 @@ class GenreController{
     $count = GenreModel::filmCountFromGenre($genre);
     $limit = 1000;
     $films = GenreModel::getStackFromGenre($genre);
-    include (__DIR__."/../View/search.php");
+    include (__DIR__."/../View/Search.php");
   }
 
 

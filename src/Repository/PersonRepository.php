@@ -15,6 +15,29 @@ class PersonRepository{
 
   }
 
+  public static function getPerson($id): array {
+
+    $pdo = Conect::pdo();
+    $stmt = $pdo->prepare("SELECT * FROM peoples where id = :id");
+    $stmt->execute([":id"=>$id]);
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+
+  }
+
+  public static function getStackFromPerson($person_id):array{
+    $pdo = Conect::pdo();
+    $stmt = $pdo->prepare("
+      SELECT f.* 
+      FROM films as f
+      JOIN participants as p
+      ON p.film_id = f.id
+      WHERE
+      p.people_id = :id
+    ");
+    $stmt->execute([":id"=>$person_id]);
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+
   public static function add(string $name, string $namelastm, string $born, bool $gender, string $wiki): int {
     $pdo = Conect::pdo();
     $stmt = $pdo->prepare("

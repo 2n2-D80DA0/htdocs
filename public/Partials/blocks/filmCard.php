@@ -5,9 +5,7 @@ use Core\Storage;
   <div style = "
     display: flex;
   ">
-    <a href = "/film/<?= $film["id"]?>">
-      <img src="<?php echo Storage::getPoster($film["id"])?>" alt="">
-    </a>
+    <img style = "margin:10px" width = 300 height = 400 src="<?php echo Storage::getPoster($film["id"])?>" alt="">
     <div class="meta">
         <h1><?= ($film['name']) ?></h1>
         <strong>Рейтинг:</strong> <?= $film['rating'] ?> <br>

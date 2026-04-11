@@ -3,9 +3,9 @@ require __DIR__. "/../vendor/autoload.php";
 require __DIR__. "/../globs.php";
 require __DIR__. "/routes.php";
 use Core\Router;
-use Core\Session;
 
-// echo($_SERVER['REDIRECT_URL']);
+
+
 if($_SERVER['REQUEST_METHOD'] === "GET"){
   Router::match(urldecode($_SERVER['REQUEST_URI']),"GET");
 }else {
